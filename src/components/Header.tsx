@@ -15,7 +15,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <img 
-              src="/lovable-uploads/22478340-e74b-45ba-999d-d2cb3010d720.png"
+              src="/lovable-uploads/9f982342-9bfc-48b7-b234-eacc0003a39c.png"
               alt="MARÈS - Medicina Estética Dra. Daniela Bueno" 
               className="h-16 w-auto"
             />
