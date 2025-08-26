@@ -9,7 +9,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center bg-mares-gradient">
+    <section className="relative min-h-screen flex items-center bg-white">
       <div className="container mx-auto px-4 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 fade-in-up animate">

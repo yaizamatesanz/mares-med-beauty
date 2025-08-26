@@ -17,7 +17,7 @@ const Header = () => {
             <img 
               src="/lovable-uploads/9f982342-9bfc-48b7-b234-eacc0003a39c.png"
               alt="MARÈS - Medicina Estética Dra. Daniela Bueno" 
-              className="h-16 w-auto"
+              className="h-14 w-auto"
             />
           </div>
 
