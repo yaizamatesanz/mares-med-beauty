@@ -13,13 +13,12 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex flex-col items-start">
-            <div className="text-3xl font-general-bold text-primary tracking-wider">
-              MARÈS
-            </div>
-            <div className="text-sm font-general text-primary/80 tracking-wide -mt-1">
-              Medicina Estética ~ Dra. Daniela Bueno
-            </div>
+          <div className="flex items-center">
+            <img 
+              src="/lovable-uploads/22478340-e74b-45ba-999d-d2cb3010d720.png"
+              alt="MARÈS - Medicina Estética Dra. Daniela Bueno" 
+              className="h-16 w-auto"
+            />
           </div>
 
           {/* Navigation - Hidden on mobile */}
