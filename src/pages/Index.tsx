@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Services from "@/components/Services";
@@ -36,19 +37,32 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
-      <Hero />
-      <WhyChooseUs />
-      <Services />
-      <BeforeAfter />
-      <div id="equipo">
-        <Team />
+      <Header />
+      <div className="pt-20"> {/* Padding for fixed header */}
+        <Hero />
+        <div id="por-que-elegirnos">
+          <WhyChooseUs />
+        </div>
+        <div id="tratamientos">
+          <Services />
+        </div>
+        <BeforeAfter />
+        <div id="equipo">
+          <Team />
+        </div>
+        <div id="testimonios">
+          <Testimonials />
+        </div>
+        <div id="citas">
+          <Appointments />
+        </div>
+        <FAQ />
+        <div id="contacto">
+          <Contact />
+        </div>
+        <FinalCTA />
+        <Footer />
       </div>
-      <Testimonials />
-      <Appointments />
-      <FAQ />
-      <Contact />
-      <FinalCTA />
-      <Footer />
     </div>
   );
 };
