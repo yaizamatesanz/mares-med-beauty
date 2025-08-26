@@ -24,7 +24,7 @@ const WhyChooseUs = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 fade-in-up animate">
           <h2 className="text-4xl lg:text-5xl font-light text-foreground mb-6">
-            Por qué elegir <span className="text-primary font-medium">Clínica Mares</span>
+            Por qué elegir <span className="text-primary font-medium">Clínica Marès</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Experiencia, naturalidad y confianza en cada tratamiento
@@ -41,7 +41,7 @@ const WhyChooseUs = () => {
               <div className="w-16 h-16 bg-primary-light rounded-full flex items-center justify-center mx-auto">
                 <feature.icon className="h-8 w-8 text-primary" />
               </div>
-              <h3 className="text-2xl font-cormorant font-semibold text-foreground">
+              <h3 className="text-2xl font-general-bold text-foreground">
                 {feature.title}
               </h3>
               <p className="text-muted-foreground leading-relaxed">
@@ -53,21 +53,21 @@ const WhyChooseUs = () => {
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
-            <h3 className="text-3xl font-cormorant font-semibold text-foreground">
+            <h3 className="text-3xl font-general-bold text-foreground">
               Nuestra filosofía
             </h3>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              En Clínica Mares creemos que la verdadera belleza reside en la armonía natural. 
+              En Clínica Marès creemos que la verdadera belleza reside en la armonía natural.
               Como la piedra marès de Menorca, cada tratamiento respeta la esencia única de 
               cada persona, realzando su belleza natural con técnicas científicas precisas.
             </p>
             <div className="grid grid-cols-2 gap-8">
               <div className="text-center p-6 bg-accent rounded-xl">
-                <div className="text-3xl font-cormorant font-bold text-primary mb-2">98%</div>
+                <div className="text-3xl font-general-bold text-primary mb-2">98%</div>
                 <div className="text-sm text-muted-foreground">Satisfacción</div>
               </div>
               <div className="text-center p-6 bg-accent rounded-xl">
-                <div className="text-3xl font-cormorant font-bold text-primary mb-2">24h</div>
+                <div className="text-3xl font-general-bold text-primary mb-2">24h</div>
                 <div className="text-sm text-muted-foreground">Seguimiento</div>
               </div>
             </div>
@@ -77,15 +77,15 @@ const WhyChooseUs = () => {
             <div className="space-y-4">
               <div className="flex items-center justify-between p-4 bg-card rounded-lg">
                 <span className="font-medium">Pacientes satisfechos</span>
-                <span className="text-2xl font-cormorant font-bold text-primary">500+</span>
+                <span className="text-2xl font-general-bold text-primary">500+</span>
               </div>
               <div className="flex items-center justify-between p-4 bg-card rounded-lg">
                 <span className="font-medium">Valoración media</span>
-                <span className="text-2xl font-cormorant font-bold text-primary">4.9/5</span>
+                <span className="text-2xl font-general-bold text-primary">4.9/5</span>
               </div>
               <div className="flex items-center justify-between p-4 bg-card rounded-lg">
                 <span className="font-medium">Años de experiencia</span>
-                <span className="text-2xl font-cormorant font-bold text-primary">5+</span>
+                <span className="text-2xl font-general-bold text-primary">5+</span>
               </div>
             </div>
           </div>

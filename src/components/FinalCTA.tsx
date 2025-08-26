@@ -35,7 +35,7 @@ const FinalCTA = () => {
             </div>
 
             {/* Headline */}
-            <h2 className="text-5xl lg:text-7xl font-cormorant font-light text-primary-foreground leading-tight">
+            <h2 className="text-5xl lg:text-7xl font-general-bold text-primary-foreground leading-tight">
               Listas para ver tu<br />
               <span className="font-semibold">mejor versión</span>
             </h2>
@@ -59,7 +59,7 @@ const FinalCTA = () => {
               </Button>
               
               <a
-                href="https://wa.me/34971123456?text=Hola, me gustaría información sobre tratamientos en Clínica Mares"
+                href="https://wa.me/34971123456?text=Hola, me gustaría información sobre tratamientos en Clínica Marès"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -76,15 +76,15 @@ const FinalCTA = () => {
             {/* Trust indicators */}
             <div className="grid md:grid-cols-3 gap-8 pt-16 max-w-2xl mx-auto">
               <div className="text-center">
-                <div className="text-3xl font-cormorant font-bold text-primary-foreground mb-2">500+</div>
+                <div className="text-3xl font-general-bold text-primary-foreground mb-2">500+</div>
                 <div className="text-primary-foreground/80">Mujeres confiaron en nosotras</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-cormorant font-bold text-primary-foreground mb-2">4.9★</div>
+                <div className="text-3xl font-general-bold text-primary-foreground mb-2">4.9★</div>
                 <div className="text-primary-foreground/80">Valoración en Google</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-cormorant font-bold text-primary-foreground mb-2">98%</div>
+                <div className="text-3xl font-general-bold text-primary-foreground mb-2">98%</div>
                 <div className="text-primary-foreground/80">Nos recomiendan</div>
               </div>
             </div>

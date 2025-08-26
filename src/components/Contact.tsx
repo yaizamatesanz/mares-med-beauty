@@ -26,7 +26,7 @@ const Contact = () => {
           {/* Contact Info */}
           <div className="space-y-8 fade-in-up animate">
             <div className="bg-card p-8 rounded-2xl shadow-soft">
-              <h3 className="text-2xl font-cormorant font-semibold text-foreground mb-6">
+              <h3 className="text-2xl font-general-bold text-foreground mb-6">
                 Información de contacto
               </h3>
 
@@ -95,7 +95,7 @@ const Contact = () => {
 
             {/* Como llegar */}
             <div className="bg-mares-gradient p-6 rounded-2xl">
-              <h4 className="text-xl font-cormorant font-semibold text-foreground mb-4">
+              <h4 className="text-xl font-general-bold text-foreground mb-4">
                 Cómo llegar
               </h4>
               <div className="space-y-4">
@@ -136,8 +136,8 @@ const Contact = () => {
               <div className="relative w-full h-full bg-accent flex items-center justify-center">
                 <div className="text-center space-y-4 p-8">
                   <MapPin className="h-16 w-16 text-primary mx-auto" />
-                  <h4 className="text-xl font-cormorant font-semibold text-foreground">
-                    Clínica Mares
+                  <h4 className="text-xl font-general-bold text-foreground">
+                    Clínica Marès
                   </h4>
                   <p className="text-muted-foreground">
                     Carrer de Ses Moreres, 15<br />

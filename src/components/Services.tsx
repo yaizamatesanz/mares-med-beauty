@@ -73,7 +73,7 @@ const Services = () => {
                 </div>
                 
                 <div className="space-y-4">
-                  <h3 className="text-2xl font-cormorant font-semibold text-foreground">
+                  <h3 className="text-2xl font-general-bold text-foreground">
                     {service.title}
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
@@ -103,7 +103,7 @@ const Services = () => {
 
         <div className="text-center mt-16">
           <div className="bg-mares-gradient p-8 rounded-2xl max-w-4xl mx-auto">
-            <h3 className="text-2xl font-cormorant font-semibold text-foreground mb-4">
+            <h3 className="text-2xl font-general-bold text-foreground mb-4">
               ¿No estás segura de qué tratamiento necesitas?
             </h3>
             <p className="text-muted-foreground mb-6">

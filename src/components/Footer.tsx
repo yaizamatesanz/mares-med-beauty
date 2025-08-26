@@ -15,8 +15,8 @@ const Footer = () => {
           {/* Clínica Info */}
           <div className="lg:col-span-2 space-y-6">
             <div>
-              <h3 className="text-3xl font-cormorant font-bold text-background mb-2">
-                Clínica Mares
+              <h3 className="text-3xl font-general-bold text-background mb-2">
+                Clínica Marès
               </h3>
               <p className="text-background/80 leading-relaxed">
                 Medicina estética en Menorca inspirada en la piedra de marès. 
@@ -66,7 +66,7 @@ const Footer = () => {
 
           {/* Enlaces rápidos */}
           <div>
-            <h4 className="text-xl font-cormorant font-semibold text-background mb-6">
+            <h4 className="text-xl font-general-bold text-background mb-6">
               Enlaces rápidos
             </h4>
             <ul className="space-y-3">
@@ -110,7 +110,7 @@ const Footer = () => {
 
           {/* Tratamientos */}
           <div>
-            <h4 className="text-xl font-cormorant font-semibold text-background mb-6">
+            <h4 className="text-xl font-general-bold text-background mb-6">
               Tratamientos
             </h4>
             <ul className="space-y-3 text-background/80 text-sm">
@@ -131,7 +131,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
           <div className="text-center md:text-left">
             <p className="text-background/80 text-sm">
-              © {currentYear} Clínica Mares. Todos los derechos reservados.
+              © {currentYear} Clínica Marès. Todos los derechos reservados.
             </p>
             <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-2 text-xs">
               <a 
@@ -159,7 +159,7 @@ const Footer = () => {
           <div className="flex items-center space-x-4">
             <p className="text-background/80 text-sm mr-2">Síguenos:</p>
             <a 
-              href="https://instagram.com/clinicamares" 
+              href="https://instagram.com/clinicamares"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 bg-background/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
@@ -167,7 +167,7 @@ const Footer = () => {
               <Instagram className="h-5 w-5 text-background" />
             </a>
             <a 
-              href="https://facebook.com/clinicamares" 
+              href="https://facebook.com/clinicamares"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 bg-background/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
@@ -180,7 +180,7 @@ const Footer = () => {
         {/* Legal note */}
         <div className="mt-8 pt-6 border-t border-background/20">
           <p className="text-background/60 text-xs text-center leading-relaxed">
-            Clínica Mares es un centro sanitario autorizado por la Conselleria de Salut del Govern de les Illes Balears. 
+            Clínica Marès es un centro sanitario autorizado por la Conselleria de Salut del Govern de les Illes Balears. 
             Registro Sanitario: C-07-000XX. Directora médica: Dra. Marina Castell (Col. nº 07/2847). 
             Los tratamientos de medicina estética deben ser siempre realizados por médicos colegiados.
           </p>

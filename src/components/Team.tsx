@@ -25,7 +25,7 @@ const Team = () => {
                 />
                 <div className="absolute -bottom-6 -right-6 bg-primary text-primary-foreground p-4 rounded-xl shadow-medium">
                   <div className="text-center">
-                    <div className="text-2xl font-cormorant font-bold">5+</div>
+                    <div className="text-2xl font-general-bold">5+</div>
                     <div className="text-sm">Años</div>
                   </div>
                 </div>
@@ -33,7 +33,7 @@ const Team = () => {
 
               <div className="space-y-8 fade-in-up animate" style={{ animationDelay: '200ms' }}>
                 <div className="space-y-4">
-                  <h3 className="text-4xl font-cormorant font-semibold text-foreground">
+                  <h3 className="text-4xl font-general-bold text-foreground">
                     Dra. Marina Castell
                   </h3>
                   <div className="flex items-center gap-2 text-muted-foreground">
@@ -78,7 +78,7 @@ const Team = () => {
                 </div>
 
                 <div className="bg-mares-gradient p-6 rounded-xl">
-                  <h4 className="text-xl font-cormorant font-semibold text-foreground mb-4">
+                  <h4 className="text-xl font-general-bold text-foreground mb-4">
                     Formación continua
                   </h4>
                   <ul className="space-y-2 text-muted-foreground">

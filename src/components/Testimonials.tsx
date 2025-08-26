@@ -86,19 +86,19 @@ const Testimonials = () => {
         <div className="mt-16 bg-card p-8 rounded-2xl shadow-soft max-w-4xl mx-auto">
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div className="space-y-2">
-              <div className="text-3xl font-cormorant font-bold text-primary">500+</div>
+              <div className="text-3xl font-general-bold text-primary">500+</div>
               <div className="text-sm text-muted-foreground">Pacientes tratadas</div>
             </div>
             <div className="space-y-2">
-              <div className="text-3xl font-cormorant font-bold text-primary">4.9/5</div>
+              <div className="text-3xl font-general-bold text-primary">4.9/5</div>
               <div className="text-sm text-muted-foreground">Valoración media</div>
             </div>
             <div className="space-y-2">
-              <div className="text-3xl font-cormorant font-bold text-primary">98%</div>
+              <div className="text-3xl font-general-bold text-primary">98%</div>
               <div className="text-sm text-muted-foreground">Satisfacción</div>
             </div>
             <div className="space-y-2">
-              <div className="text-3xl font-cormorant font-bold text-primary">92%</div>
+              <div className="text-3xl font-general-bold text-primary">92%</div>
               <div className="text-sm text-muted-foreground">Recomendaciones</div>
             </div>
           </div>

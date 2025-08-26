@@ -29,7 +29,7 @@ const Appointments = () => {
             {/* Booking Process */}
             <div className="space-y-8 fade-in-up animate">
               <div className="bg-card p-8 rounded-2xl shadow-soft">
-                <h3 className="text-2xl font-cormorant font-semibold text-foreground mb-6">
+                <h3 className="text-2xl font-general-bold text-foreground mb-6">
                   Proceso de reserva
                 </h3>
 
@@ -77,7 +77,7 @@ const Appointments = () => {
 
               {/* Benefits */}
               <div className="bg-mares-gradient p-6 rounded-2xl">
-                <h4 className="text-xl font-cormorant font-semibold text-foreground mb-4">
+                <h4 className="text-xl font-general-bold text-foreground mb-4">
                   Ventajas de reservar online
                 </h4>
                 <ul className="space-y-3">
@@ -104,7 +104,7 @@ const Appointments = () => {
             {/* Appointment Types & Pricing */}
             <div className="space-y-8 fade-in-up animate" style={{ animationDelay: '200ms' }}>
               <div className="bg-card p-8 rounded-2xl shadow-soft">
-                <h3 className="text-2xl font-cormorant font-semibold text-foreground mb-6">
+                <h3 className="text-2xl font-general-bold text-foreground mb-6">
                   Tipos de consulta
                 </h3>
 

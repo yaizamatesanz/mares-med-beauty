@@ -46,15 +46,15 @@ const Hero = () => {
 
             <div className="flex items-center gap-8 pt-8 border-t border-border">
               <div className="text-center">
-                <div className="text-2xl font-cormorant font-semibold text-primary">500+</div>
+                <div className="text-2xl font-general-bold text-primary">500+</div>
                 <div className="text-sm text-muted-foreground">Pacientes</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-cormorant font-semibold text-primary">4.9★</div>
+                <div className="text-2xl font-general-bold text-primary">4.9★</div>
                 <div className="text-sm text-muted-foreground">Valoración</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-cormorant font-semibold text-primary">5</div>
+                <div className="text-2xl font-general-bold text-primary">5</div>
                 <div className="text-sm text-muted-foreground">Años</div>
               </div>
             </div>
@@ -63,7 +63,7 @@ const Hero = () => {
           <div className="relative fade-in-up animate" style={{ animationDelay: '200ms' }}>
             <img
               src={heroImage}
-              alt="Clínica de medicina estética Mares en Menorca"
+              alt="Clínica de medicina estética Marès en Menorca"
               className="rounded-2xl shadow-strong w-full h-[600px] object-cover hover-lift"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-2xl"></div>

@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Clínica Mares Design System - Medicina Estética Premium
+/* Clínica Marès Design System - Medicina Estética Premium
 Inspirado en la piedra marès y la luz mediterránea de Menorca
 Todos los colores deben ser HSL para máxima flexibilidad
 */
@@ -125,12 +125,12 @@ Todos los colores deben ser HSL para máxima flexibilidad
   }
 
   body {
-    @apply bg-background text-foreground font-inter;
+    @apply bg-background text-foreground font-general;
   }
   
-  /* Typography - Cormorant Garamond para títulos */
+  /* Typography - General Sans para títulos */
   h1, h2, h3, h4, h5, h6 {
-    @apply font-cormorant;
+    @apply font-general-bold;
   }
 }
 

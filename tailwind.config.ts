@@ -67,8 +67,8 @@ export default {
 				}
 			},
 			fontFamily: {
-				'cormorant': ['Cormorant Garamond', 'serif'],
-				'inter': ['Inter', 'sans-serif']
+				'general': ['General Sans', 'sans-serif'],
+				'general-bold': ['General Sans', 'sans-serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

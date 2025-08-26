@@ -86,7 +86,7 @@ const BeforeAfter = () => {
 
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-3xl font-cormorant font-semibold text-foreground mb-2">
+                  <h3 className="text-3xl font-general-bold text-foreground mb-2">
                     {currentImage.treatment}
                   </h3>
                   <p className="text-lg text-muted-foreground">
