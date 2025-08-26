@@ -20,7 +20,7 @@ const features = [
 
 const WhyChooseUs = () => {
   return (
-    <section className="py-20 bg-mares-texture">
+    <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 fade-in-up animate">
           <h2 className="text-4xl lg:text-5xl font-light text-foreground mb-6">
