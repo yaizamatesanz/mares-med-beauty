@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import logoMares from "@/assets/logo-mares-new.jpg";
 
 const scrollToSection = (sectionId: string) => {
   const element = document.getElementById(sectionId);
@@ -15,7 +16,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <img 
-              src="/lovable-uploads/9f982342-9bfc-48b7-b234-eacc0003a39c.png"
+              src={logoMares}
               alt="MARÈS - Medicina Estética Dra. Daniela Bueno" 
               className="h-14 w-auto"
             />
