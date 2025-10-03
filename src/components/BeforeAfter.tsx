@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, Eye } from "lucide-react";
 import beforeTreatment1 from "@/assets/before-treatment-1.png";
 import afterTreatment1 from "@/assets/after-treatment-1.png";
+import beforeTreatment2 from "@/assets/before-treatment-2.png";
 
 // Datos simulados para before/after
 const beforeAfterData = [
@@ -16,7 +17,7 @@ const beforeAfterData = [
   {
     id: 2,
     treatment: "Ácido hialurónico",
-    before: "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?w=400&h=400&fit=crop&crop=face",
+    before: beforeTreatment2,
     after: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&crop=face",
     description: "Volumen natural y hidratación labial"
   },
