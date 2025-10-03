@@ -19,7 +19,7 @@ const Footer = () => {
                 Clínica Marès
               </h3>
               <p className="text-background/80 leading-relaxed">
-                Medicina estética en Menorca inspirada en la piedra de marès. 
+                Medicina estética en Las Palmas de Gran Canaria inspirada en la piedra de marès. 
                 Belleza natural, ciencia precisa, resultados que respetan tu esencia única.
               </p>
             </div>
@@ -28,18 +28,18 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                 <div>
-                  <p className="text-background font-medium">Carrer de Ses Moreres, 15</p>
-                  <p className="text-background/80">07701 Mahón, Menorca</p>
+                  <p className="text-background font-medium">Calle León y Castillo, 234</p>
+                  <p className="text-background/80">35005 Las Palmas de Gran Canaria</p>
                 </div>
               </div>
 
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-primary flex-shrink-0" />
                 <a 
-                  href="tel:+34971123456" 
+                  href="tel:+34928123456" 
                   className="text-background hover:text-primary transition-colors"
                 >
-                  +34 971 12 34 56
+                  +34 928 12 34 56
                 </a>
               </div>
 
@@ -97,7 +97,7 @@ const Footer = () => {
               </li>
               <li>
                 <a 
-                  href="https://wa.me/34971123456" 
+                  href="https://wa.me/34928123456" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-background/80 hover:text-primary transition-colors"
@@ -180,8 +180,8 @@ const Footer = () => {
         {/* Legal note */}
         <div className="mt-8 pt-6 border-t border-background/20">
           <p className="text-background/60 text-xs text-center leading-relaxed">
-            Clínica Marès es un centro sanitario autorizado por la Conselleria de Salut del Govern de les Illes Balears. 
-            Registro Sanitario: C-07-000XX. Directora médica: Dra. Marina Castell (Col. nº 07/2847). 
+            Clínica Marès es un centro sanitario autorizado por la Consejería de Sanidad del Gobierno de Canarias. 
+            Registro Sanitario: C-35-000XX. Directora médica: Dra. Daniela Bueno (Col. nº 35/3456). 
             Los tratamientos de medicina estética deben ser siempre realizados por médicos colegiados.
           </p>
         </div>

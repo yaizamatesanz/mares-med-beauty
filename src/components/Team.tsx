@@ -20,7 +20,7 @@ const Team = () => {
               <div className="relative fade-in-up animate">
                 <img
                   src={doctorImage}
-                  alt="Dra. Marina Castell - Especialista en Medicina Estética"
+                  alt="Dra. Daniela Bueno - Especialista en Medicina Estética"
                   className="w-full max-w-md mx-auto rounded-2xl hover-lift"
                 />
                 <div className="absolute -bottom-6 -right-6 bg-primary text-primary-foreground p-4 rounded-xl shadow-medium">
@@ -34,11 +34,11 @@ const Team = () => {
               <div className="space-y-8 fade-in-up animate" style={{ animationDelay: '200ms' }}>
                 <div className="space-y-4">
                   <h3 className="text-4xl font-general-bold text-foreground">
-                    Dra. Marina Castell
+                    Dra. Daniela Bueno
                   </h3>
                   <div className="flex items-center gap-2 text-muted-foreground">
                     <MapPin className="h-4 w-4" />
-                    <span>Colegiada nº 07/2847 - Colegio de Médicos de Baleares</span>
+                    <span>Colegiada nº 35/3456 - Colegio de Médicos de Las Palmas</span>
                   </div>
                 </div>
 
@@ -102,9 +102,9 @@ const Team = () => {
                 </div>
 
                 <blockquote className="border-l-4 border-primary pl-6 italic text-muted-foreground">
-                  "En Menorca hemos aprendido que la belleza está en la armonía con la naturaleza. 
+                  "En Las Palmas hemos aprendido que la belleza está en la armonía con la naturaleza. 
                   Cada tratamiento debe respetar esa esencia única que nos hace especiales."
-                  <footer className="text-sm font-medium text-foreground mt-2">— Dra. Marina Castell</footer>
+                  <footer className="text-sm font-medium text-foreground mt-2">— Dra. Daniela Bueno</footer>
                 </blockquote>
               </div>
             </div>

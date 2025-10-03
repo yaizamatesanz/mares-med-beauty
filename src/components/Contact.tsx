@@ -3,11 +3,11 @@ import { Button } from "@/components/ui/button";
 
 const Contact = () => {
   const openGoogleMaps = () => {
-    window.open('https://www.google.com/maps/search/mahon+menorca+clinic', '_blank');
+    window.open('https://www.google.com/maps/search/clinica+las+palmas+gran+canaria', '_blank');
   };
 
   const openWhatsApp = () => {
-    window.open('https://wa.me/34971123456?text=Hola, me gustaría pedir información sobre tratamientos', '_blank');
+    window.open('https://wa.me/34928123456?text=Hola, me gustaría pedir información sobre tratamientos', '_blank');
   };
 
   return (
@@ -15,10 +15,10 @@ const Contact = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 fade-in-up animate">
           <h2 className="text-4xl lg:text-5xl font-light text-foreground mb-6">
-            Visítanos en <span className="text-primary font-medium">Menorca</span>
+            Visítanos en <span className="text-primary font-medium">Las Palmas</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Te esperamos en el corazón de Mahón, con fácil acceso y parking gratuito
+            Te esperamos en el corazón de Las Palmas de Gran Canaria, con fácil acceso y parking
           </p>
         </div>
 
@@ -38,9 +38,9 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold text-foreground mb-1">Dirección</h4>
                     <p className="text-muted-foreground">
-                      Carrer de Ses Moreres, 15<br />
-                      07701 Mahón, Menorca<br />
-                      Illes Balears
+                      Calle León y Castillo, 234<br />
+                      35005 Las Palmas de Gran Canaria<br />
+                      Las Palmas
                     </p>
                   </div>
                 </div>
@@ -52,10 +52,10 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold text-foreground mb-1">Teléfono</h4>
                     <a 
-                      href="tel:+34971123456" 
+                      href="tel:+34928123456" 
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
-                      +34 971 12 34 56
+                      +34 928 12 34 56
                     </a>
                   </div>
                 </div>
@@ -113,7 +113,7 @@ const Contact = () => {
                   <div>
                     <p className="font-medium text-foreground">Transporte público</p>
                     <p className="text-sm text-muted-foreground">
-                      Parada de autobús a 100m. Líneas 10 y 15 desde el aeropuerto.
+                      Parada de guagua a 50m. Líneas 1 y 17 conectan con toda la ciudad.
                     </p>
                   </div>
                 </div>
@@ -140,8 +140,8 @@ const Contact = () => {
                     Clínica Marès
                   </h4>
                   <p className="text-muted-foreground">
-                    Carrer de Ses Moreres, 15<br />
-                    Mahón, Menorca
+                    Calle León y Castillo, 234<br />
+                    Las Palmas de Gran Canaria
                   </p>
                   <Button onClick={openGoogleMaps} className="cta-secondary">
                     Abrir mapa interactivo

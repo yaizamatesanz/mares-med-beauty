@@ -110,7 +110,7 @@ const Testimonials = () => {
             ¿Quieres ver más opiniones? Consulta nuestras reseñas en Google
           </p>
           <a
-            href="https://www.google.com/search?q=clinica+mares+menorca+reviews"
+            href="https://www.google.com/search?q=clinica+mares+las+palmas+gran+canaria+reviews"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center px-6 py-3 text-primary border border-primary rounded-lg hover:bg-primary hover:text-primary-foreground transition-colors"

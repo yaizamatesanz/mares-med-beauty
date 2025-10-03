@@ -58,7 +58,7 @@ const WhyChooseUs = () => {
             </h3>
             <p className="text-lg text-muted-foreground leading-relaxed">
               En Clínica Marès creemos que la verdadera belleza reside en la armonía natural.
-              Como la piedra marès de Menorca, cada tratamiento respeta la esencia única de 
+              Inspirados en la piedra marès, cada tratamiento respeta la esencia única de 
               cada persona, realzando su belleza natural con técnicas científicas precisas.
             </p>
             <div className="grid grid-cols-2 gap-8">

@@ -19,7 +19,7 @@ const Hero = () => {
                 <span className="text-primary font-medium">ciencia precisa</span>
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed max-w-lg">
-                Medicina estética en Menorca inspirada en la piedra de marès: 
+                Medicina estética en Las Palmas de Gran Canaria inspirada en la piedra de marès: 
                 natural, luminosa y elegante.
               </p>
             </div>
@@ -63,7 +63,7 @@ const Hero = () => {
           <div className="relative fade-in-up animate" style={{ animationDelay: '200ms' }}>
             <img
               src={heroImage}
-              alt="Clínica de medicina estética Marès en Menorca"
+              alt="Clínica de medicina estética Marès en Las Palmas de Gran Canaria"
               className="rounded-2xl shadow-strong w-full h-[600px] object-cover hover-lift"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-2xl"></div>
