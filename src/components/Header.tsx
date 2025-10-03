@@ -18,7 +18,7 @@ const Header = () => {
             <img 
               src={logoMares}
               alt="MARÈS - Medicina Estética Dra. Daniela Bueno" 
-              className="h-14 w-auto"
+              className="h-20 w-auto"
             />
           </div>
 
