@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+/* General Sans Font Family */
+@font-face {
+  font-family: 'General Sans';
+  src: url('/fonts/GeneralSans-Variable.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'General Sans';
+  src: url('/fonts/GeneralSans-VariableItalic.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
 /* Clínica Marès Design System - Medicina Estética Premium
 Paleta oficial inspirada en la piedra marès de Menorca
 Todos los colores en HSL para máxima flexibilidad y elegancia
