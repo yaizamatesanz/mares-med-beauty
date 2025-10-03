@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import logoMares from "@/assets/logo-mares-new.jpg";
+import logoMares from "@/assets/logo-mares-final.jpg";
 
 const scrollToSection = (sectionId: string) => {
   const element = document.getElementById(sectionId);
