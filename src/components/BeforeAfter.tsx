@@ -6,6 +6,7 @@ import afterTreatment1 from "@/assets/after-treatment-1.png";
 import beforeTreatment2 from "@/assets/before-treatment-2.png";
 import afterTreatment2 from "@/assets/after-treatment-2.png";
 import beforeTreatment3 from "@/assets/before-treatment-3.png";
+import afterTreatment3 from "@/assets/after-treatment-3.png";
 
 // Datos simulados para before/after
 const beforeAfterData = [
@@ -27,7 +28,7 @@ const beforeAfterData = [
     id: 3,
     treatment: "Skin boosters",
     before: beforeTreatment3,
-    after: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=400&fit=crop&crop=face",
+    after: afterTreatment3,
     description: "Mejora de textura e hidratación"
   }
 ];
