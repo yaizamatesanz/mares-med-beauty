@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, Eye } from "lucide-react";
+import beforeTreatment1 from "@/assets/before-treatment-1.png";
 
 // Datos simulados para before/after
 const beforeAfterData = [
   {
     id: 1,
     treatment: "Toxina botulínica",
-    before: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=400&fit=crop&crop=face",
+    before: beforeTreatment1,
     after: "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=400&h=400&fit=crop&crop=face",
     description: "Suavizado natural de líneas de expresión"
   },
