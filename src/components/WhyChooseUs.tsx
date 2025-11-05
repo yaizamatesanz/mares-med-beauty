@@ -28,8 +28,8 @@ const WhyChooseUs = () => {
           {features.map((feature, index) => <div key={index} className="text-center space-y-6 p-8 bg-card rounded-2xl hover-lift fade-in-up animate" style={{
           animationDelay: `${index * 200}ms`
         }}>
-              <div className="w-16 h-16 bg-primary-light rounded-full flex items-center justify-center mx-auto">
-                <feature.icon className="h-8 w-8 text-primary" />
+              <div className="flex items-center justify-center mx-auto mb-2">
+                <feature.icon className="h-12 w-12 text-primary" strokeWidth={1.5} />
               </div>
               <h3 className="text-2xl font-general-bold text-foreground">
                 {feature.title}
