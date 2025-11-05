@@ -5,7 +5,8 @@ import {
   Sparkles,
   Zap,
   Activity,
-  MessageCircle
+  MessageCircle,
+  Calendar
 } from "lucide-react";
 
 const services = [
@@ -89,31 +90,19 @@ const Services = () => {
                     </li>
                   ))}
                 </ul>
-
-                <Button 
-                  variant="outline" 
-                  className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300"
-                >
-                  Saber más
-                </Button>
               </div>
             </div>
           ))}
         </div>
 
         <div className="text-center mt-16">
-          <div className="bg-mares-gradient p-8 rounded-2xl max-w-4xl mx-auto">
-            <h3 className="text-2xl font-general-bold text-foreground mb-4">
-              ¿No estás segura de qué tratamiento necesitas?
-            </h3>
-            <p className="text-muted-foreground mb-6">
-              Agenda una consulta gratuita y diseñemos juntas tu plan personalizado
-            </p>
-            <Button className="cta-premium">
-              <MessageCircle className="mr-2 h-5 w-5" />
-              Consulta gratuita
-            </Button>
-          </div>
+          <Button 
+            className="cta-premium text-lg px-8 py-6 h-auto"
+            onClick={() => document.getElementById('citas')?.scrollIntoView({ behavior: 'smooth' })}
+          >
+            <Calendar className="mr-2 h-5 w-5" />
+            Pedir cita
+          </Button>
         </div>
       </div>
     </section>
