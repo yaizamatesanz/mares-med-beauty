@@ -2,20 +2,6 @@ import { useState, useEffect } from "react";
 import { getAllTreatments, Treatment } from "@/data/treatments";
 import TreatmentModal from "@/components/TreatmentModal";
 
-// Importar imágenes para el patrón ajedrez
-import consultaMedicinaEsteticaImg from "@/assets/tratamientos/consulta-medicina-estetica.webp";
-import consultaCapilarImg from "@/assets/tratamientos/consulta-capilar.webp";
-import botoxImg from "@/assets/tratamientos/botox.webp";
-import tratamientoLabiosImg from "@/assets/tratamientos/tratamiento-labios.webp";
-import skinboosterImg from "@/assets/tratamientos/skinbooster.webp";
-import estimulacionColagenoImg from "@/assets/tratamientos/estimulacion-colageno.webp";
-import tratamientoOjerasImg from "@/assets/tratamientos/tratamiento-ojeras.webp";
-import aquapureImg from "@/assets/tratamientos/aquapure.webp";
-import fullFaceImg from "@/assets/tratamientos/full-face.webp";
-import prpFacialImg from "@/assets/tratamientos/prp-facial.webp";
-import mesoterapiaCapilarImg from "@/assets/tratamientos/mesoterapia-capilar.webp";
-import peelingFacialImg from "@/assets/tratamientos/peeling-facial.webp";
-
 const AllTreatmentsGrid = () => {
   const [selectedTreatment, setSelectedTreatment] = useState<Treatment | null>(null);
   const [modalOpen, setModalOpen] = useState(false);
@@ -44,22 +30,6 @@ const AllTreatmentsGrid = () => {
     setModalOpen(true);
   };
 
-  // Imágenes disponibles para el patrón (12 imágenes únicas)
-  const images = [
-    consultaMedicinaEsteticaImg,
-    consultaCapilarImg,
-    botoxImg,
-    tratamientoLabiosImg,
-    skinboosterImg,
-    estimulacionColagenoImg,
-    tratamientoOjerasImg,
-    aquapureImg,
-    fullFaceImg,
-    prpFacialImg,
-    mesoterapiaCapilarImg,
-    peelingFacialImg
-  ];
-  
   // Colores de la paleta para alternar
   const colors = [
     "bg-primary", 
@@ -68,16 +38,15 @@ const AllTreatmentsGrid = () => {
   ];
 
   // Función para determinar si es imagen o color (patrón ajedrez real responsive)
-  const getCardStyle = (index: number) => {
+  const getCardStyle = (index: number, treatment: Treatment) => {
     const row = Math.floor(index / columns);
     const col = index % columns;
     const isImage = (row + col) % 2 === 0; // Ajedrez: suma par = imagen, impar = color
     
-    if (isImage) {
-      const imageIndex = Math.floor(index / 2) % images.length;
-      return { type: 'image', image: images[imageIndex] };
+    if (isImage && treatment.image) {
+      return { type: 'image', image: treatment.image };
     } else {
-      const colorIndex = Math.floor(index / 2) % colors.length;
+      const colorIndex = index % colors.length;
       return { type: 'color', color: colors[colorIndex] };
     }
   };
@@ -87,7 +56,7 @@ const AllTreatmentsGrid = () => {
       <div className="w-[95%] max-w-7xl 2xl:max-w-screen-2xl mx-auto px-4 md:px-6">
         <div className="flex flex-wrap justify-center gap-3 md:gap-4">
           {allTreatments.map((treatment, index) => {
-            const cardStyle = getCardStyle(index);
+            const cardStyle = getCardStyle(index, treatment);
             const cardBaseClass = "w-[calc(50%-6px)] md:w-[calc(33.333%-11px)] lg:w-[calc(25%-12px)] h-[160px] md:h-[180px] lg:h-[200px] 2xl:h-[240px]";
             
             if (cardStyle.type === 'image') {
