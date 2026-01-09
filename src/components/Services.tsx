@@ -1,10 +1,9 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
-import botoxBg from "@/assets/botox-bg.jpg";
-import skinboostersBg from "@/assets/skinboosters-bg.jpg";
-import treatmentLips from "@/assets/treatment-lips.jpg";
-import asesoriaBg from "@/assets/asesoria-bg.jpg";
+import consultaMedicinaEsteticaImg from "@/assets/tratamientos/consulta-medicina-estetica.webp";
+import botoxImg from "@/assets/tratamientos/botox.webp";
+import skinboosterImg from "@/assets/tratamientos/skinbooster.webp";
 import TreatmentModal from "@/components/TreatmentModal";
 import { getTreatmentById, Treatment } from "@/data/treatments";
 
@@ -48,7 +47,7 @@ const Services = ({
           
           {/* Consulta Medicina Estética - IMAGEN */}
           <button onClick={() => handleServiceClick('consulta-medicina-estetica')} className="group relative overflow-hidden rounded-xl md:rounded-2xl hover-lift">
-            <img src={asesoriaBg} alt="Consulta de medicina estética" className="w-full h-full object-cover" />
+            <img src={consultaMedicinaEsteticaImg} alt="Consulta de medicina estética" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent group-hover:bg-black/70 transition-all duration-300 flex group-hover:items-center items-end p-4 md:p-6 group-hover:justify-center justify-start">
               <div className="group-hover:text-center text-left transition-all duration-300">
                 <h3 className="text-white text-base md:text-lg xl:text-xl 2xl:text-2xl font-general-bold mb-0 group-hover:mb-3 transition-all duration-300">Consulta de valoración de medicina estética</h3>
@@ -79,7 +78,7 @@ const Services = ({
 
           {/* Neuromoduladores - IMAGEN */}
           <button onClick={() => handleServiceClick('neuromoduladores')} className="group relative overflow-hidden rounded-xl md:rounded-2xl hover-lift">
-            <img src={botoxBg} alt="Neuromoduladores" className="w-full h-full object-cover" />
+            <img src={botoxImg} alt="Neuromoduladores" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent group-hover:bg-black/70 transition-all duration-300 flex group-hover:items-center items-end p-4 md:p-6 group-hover:justify-center justify-start">
               <div className="group-hover:text-center text-left transition-all duration-300">
                 <h3 className="text-white text-base md:text-lg xl:text-xl 2xl:text-2xl font-general-bold mb-0 group-hover:mb-3 transition-all duration-300">Neuromoduladores</h3>
@@ -110,7 +109,7 @@ const Services = ({
 
           {/* Skinboosters - IMAGEN */}
           <button onClick={() => handleServiceClick('skin-boosters')} className="group relative overflow-hidden rounded-xl md:rounded-2xl hover-lift">
-            <img src={skinboostersBg} alt="Skinboosters" className="w-full h-full object-cover" />
+            <img src={skinboosterImg} alt="Skinboosters" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent group-hover:bg-black/70 transition-all duration-300 flex group-hover:items-center items-end p-4 md:p-6 group-hover:justify-center justify-start">
               <div className="group-hover:text-center text-left transition-all duration-300">
                 <h3 className="text-white text-base md:text-lg xl:text-xl 2xl:text-2xl font-general-bold mb-0 group-hover:mb-3 transition-all duration-300">Skinboosters</h3>
