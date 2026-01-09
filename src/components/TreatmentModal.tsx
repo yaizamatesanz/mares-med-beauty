@@ -76,7 +76,7 @@ const TreatmentModal = ({ treatment, open, onOpenChange }: TreatmentModalProps) 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 md:gap-3">
                 {treatment.duration && (
                   <div className="bg-card p-3 rounded-lg border">
-                    <p className="text-xs text-muted-foreground mb-1">Duración</p>
+                    <p className="text-xs text-muted-foreground mb-1">Intervención</p>
                     <p className="font-semibold text-foreground text-sm">{treatment.duration}</p>
                   </div>
                 )}
