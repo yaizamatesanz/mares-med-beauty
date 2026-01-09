@@ -2,19 +2,19 @@ import { useState, useEffect } from "react";
 import { getAllTreatments, Treatment } from "@/data/treatments";
 import TreatmentModal from "@/components/TreatmentModal";
 
-// Importar imágenes disponibles
-import botoxBg from "@/assets/botox-bg.jpg";
-import skinboostersBg from "@/assets/skinboosters-bg.jpg";
-import treatmentLips from "@/assets/treatment-lips.jpg";
-import asesoriaBg from "@/assets/asesoria-bg.jpg";
-import hialuronicoBg from "@/assets/hialuronico-bg.jpg";
-import laserBg from "@/assets/laser-bg.jpg";
-import peelingBg from "@/assets/peeling-bg.jpg";
-import treatmentCapilar from "@/assets/treatment-capilar.jpg";
-import treatmentColageno from "@/assets/treatment-colageno.jpg";
-import treatmentOjeras from "@/assets/treatment-ojeras.jpg";
-import treatmentAquapure from "@/assets/treatment-aquapure.jpg";
-import treatmentMenton from "@/assets/treatment-menton.jpg";
+// Importar imágenes para el patrón ajedrez
+import consultaMedicinaEsteticaImg from "@/assets/tratamientos/consulta-medicina-estetica.webp";
+import consultaCapilarImg from "@/assets/tratamientos/consulta-capilar.webp";
+import botoxImg from "@/assets/tratamientos/botox.webp";
+import tratamientoLabiosImg from "@/assets/tratamientos/tratamiento-labios.webp";
+import skinboosterImg from "@/assets/tratamientos/skinbooster.webp";
+import estimulacionColagenoImg from "@/assets/tratamientos/estimulacion-colageno.webp";
+import tratamientoOjerasImg from "@/assets/tratamientos/tratamiento-ojeras.webp";
+import aquapureImg from "@/assets/tratamientos/aquapure.webp";
+import fullFaceImg from "@/assets/tratamientos/full-face.webp";
+import prpFacialImg from "@/assets/tratamientos/prp-facial.webp";
+import mesoterapiaCapilarImg from "@/assets/tratamientos/mesoterapia-capilar.webp";
+import peelingFacialImg from "@/assets/tratamientos/peeling-facial.webp";
 
 const AllTreatmentsGrid = () => {
   const [selectedTreatment, setSelectedTreatment] = useState<Treatment | null>(null);
@@ -46,18 +46,18 @@ const AllTreatmentsGrid = () => {
 
   // Imágenes disponibles para el patrón (12 imágenes únicas)
   const images = [
-    asesoriaBg, 
-    treatmentCapilar, 
-    botoxBg, 
-    treatmentColageno, 
-    treatmentLips, 
-    treatmentMenton, 
-    skinboostersBg, 
-    treatmentOjeras, 
-    hialuronicoBg, 
-    treatmentAquapure, 
-    laserBg, 
-    peelingBg
+    consultaMedicinaEsteticaImg,
+    consultaCapilarImg,
+    botoxImg,
+    tratamientoLabiosImg,
+    skinboosterImg,
+    estimulacionColagenoImg,
+    tratamientoOjerasImg,
+    aquapureImg,
+    fullFaceImg,
+    prpFacialImg,
+    mesoterapiaCapilarImg,
+    peelingFacialImg
   ];
   
   // Colores de la paleta para alternar
