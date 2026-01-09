@@ -23,12 +23,28 @@ import {
   Leaf,
   Waves
 } from "lucide-react";
-import beforeTreatment1 from "@/assets/before-treatment-1.png";
-import afterTreatment1 from "@/assets/after-treatment-1.png";
-import beforeTreatment2 from "@/assets/before-treatment-2.png";
-import afterTreatment2 from "@/assets/after-treatment-2.png";
-import beforeTreatment3 from "@/assets/before-treatment-3.png";
-import afterTreatment3 from "@/assets/after-treatment-3.png";
+
+// Importar imágenes de tratamientos
+import consultaMedicinaEsteticaImg from "@/assets/tratamientos/consulta-medicina-estetica.webp";
+import consultaCapilarImg from "@/assets/tratamientos/consulta-capilar.webp";
+import rutinaDermocosmeticaImg from "@/assets/tratamientos/rutina-dermocosmetica.webp";
+import botoxImg from "@/assets/tratamientos/botox.webp";
+import bruxismoImg from "@/assets/tratamientos/bruxismo.webp";
+import hiperhidrosisImg from "@/assets/tratamientos/hiperhidrosis.webp";
+import estimulacionColagenoImg from "@/assets/tratamientos/estimulacion-colageno.webp";
+import tratamientoLabiosImg from "@/assets/tratamientos/tratamiento-labios.webp";
+import tratamientoMentonImg from "@/assets/tratamientos/tratamiento-menton.webp";
+import codigoBarrasImg from "@/assets/tratamientos/codigo-barras.webp";
+import tratamientoOjerasImg from "@/assets/tratamientos/tratamiento-ojeras.webp";
+import fullFaceImg from "@/assets/tratamientos/full-face.webp";
+import skinboosterImg from "@/assets/tratamientos/skinbooster.webp";
+import vitaminasImg from "@/assets/tratamientos/vitaminas.webp";
+import polinucleotidosImg from "@/assets/tratamientos/polinucleotidos.webp";
+import prpFacialImg from "@/assets/tratamientos/prp-facial.webp";
+import skinPenImg from "@/assets/tratamientos/skin-pen.webp";
+import mesoterapiaCapilarImg from "@/assets/tratamientos/mesoterapia-capilar.webp";
+import aquapureImg from "@/assets/tratamientos/aquapure.webp";
+import peelingFacialImg from "@/assets/tratamientos/peeling-facial.webp";
 
 export interface Treatment {
   id: string;
@@ -37,8 +53,7 @@ export interface Treatment {
   description: string;
   longDescription: string;
   benefits: string[];
-  beforeImage?: string;
-  afterImage?: string;
+  image?: string;
   duration?: string;
   recovery?: string;
   results?: string;
@@ -60,6 +75,7 @@ export const treatments: Treatment[] = [
       "Resolución de todas tus dudas con transparencia",
       "Presupuesto detallado sin compromiso"
     ],
+    image: consultaMedicinaEsteticaImg,
     duration: "30-45 min",
     recovery: "-",
     results: "-",
@@ -78,6 +94,7 @@ export const treatments: Treatment[] = [
       "Recomendaciones de cuidado diario",
       "Seguimiento de evolución"
     ],
+    image: consultaCapilarImg,
     duration: "30-45 min",
     recovery: "-",
     results: "-",
@@ -96,6 +113,7 @@ export const treatments: Treatment[] = [
       "Seguimiento de resultados",
       "Ajustes según evolución de tu piel"
     ],
+    image: rutinaDermocosmeticaImg,
     duration: "30 min",
     recovery: "-",
     results: "Progresivo",
@@ -114,8 +132,7 @@ export const treatments: Treatment[] = [
       "Efecto preventivo: previene la formación de nuevas arrugas",
       "Duración de 3-5 meses con posibilidad de mantenimiento"
     ],
-    beforeImage: beforeTreatment1,
-    afterImage: afterTreatment1,
+    image: botoxImg,
     duration: "15-30 min",
     recovery: "Inmediata",
     results: "3-14 días",
@@ -134,6 +151,7 @@ export const treatments: Treatment[] = [
       "Prevención del desgaste dental",
       "Mejora de la calidad del sueño"
     ],
+    image: bruxismoImg,
     duration: "15-20 min",
     recovery: "Inmediata",
     results: "1-2 semanas"
@@ -151,6 +169,7 @@ export const treatments: Treatment[] = [
       "Resultados duraderos de 6-9 meses",
       "Tratamiento rápido y poco invasivo"
     ],
+    image: hiperhidrosisImg,
     duration: "20-30 min",
     recovery: "Inmediata",
     results: "3-7 días"
@@ -168,6 +187,7 @@ export const treatments: Treatment[] = [
       "Aplicable en rostro, cuello y manos",
       "Rejuvenecimiento desde el interior"
     ],
+    image: estimulacionColagenoImg,
     duration: "30-45 min",
     recovery: "24-48 horas",
     results: "A partir del 3º mes"
@@ -185,8 +205,7 @@ export const treatments: Treatment[] = [
       "Corrección de asimetrías",
       "Resultados inmediatos y duraderos"
     ],
-    beforeImage: beforeTreatment2,
-    afterImage: afterTreatment2,
+    image: tratamientoLabiosImg,
     duration: "20-30 min",
     recovery: "24-48 horas",
     results: "Inmediato",
@@ -205,6 +224,7 @@ export const treatments: Treatment[] = [
       "Definición de la línea mandibular",
       "Resultados inmediatos y naturales"
     ],
+    image: tratamientoMentonImg,
     duration: "20-30 min",
     recovery: "24-48 horas",
     results: "Inmediato"
@@ -222,6 +242,7 @@ export const treatments: Treatment[] = [
       "Mejora la aplicación del maquillaje",
       "Resultados naturales e inmediatos"
     ],
+    image: codigoBarrasImg,
     duration: "15-20 min",
     recovery: "24 horas",
     results: "Inmediato"
@@ -239,6 +260,7 @@ export const treatments: Treatment[] = [
       "Rejuvenecimiento de la mirada",
       "Resultados naturales e inmediatos"
     ],
+    image: tratamientoOjerasImg,
     duration: "20-30 min",
     recovery: "24-48 horas",
     results: "Inmediato"
@@ -256,6 +278,7 @@ export const treatments: Treatment[] = [
       "Abordaje de múltiples zonas",
       "Plan diseñado a medida"
     ],
+    image: fullFaceImg,
     duration: "60-90 min",
     recovery: "24-48 horas",
     results: "Progresivo"
@@ -273,8 +296,7 @@ export const treatments: Treatment[] = [
       "Estimula la producción natural de colágeno",
       "Ideal para rostro, cuello, escote y manos"
     ],
-    beforeImage: beforeTreatment3,
-    afterImage: afterTreatment3,
+    image: skinboosterImg,
     duration: "30 min",
     recovery: "24 horas",
     results: "2-3 semanas",
@@ -293,6 +315,7 @@ export const treatments: Treatment[] = [
       "Prevención del envejecimiento",
       "Mejora del aspecto general"
     ],
+    image: vitaminasImg,
     duration: "20-30 min",
     recovery: "Inmediata",
     results: "Progresivo"
@@ -310,6 +333,7 @@ export const treatments: Treatment[] = [
       "Efecto tensor natural",
       "Resultados progresivos y duraderos"
     ],
+    image: polinucleotidosImg,
     duration: "30 min",
     recovery: "24 horas",
     results: "Según protocolo"
@@ -327,6 +351,7 @@ export const treatments: Treatment[] = [
       "Reduce arrugas finas",
       "Resultados progresivos y naturales"
     ],
+    image: prpFacialImg,
     duration: "45-60 min",
     recovery: "24-48 horas",
     results: "4-6 semanas"
@@ -344,6 +369,7 @@ export const treatments: Treatment[] = [
       "Textura de piel más uniforme",
       "Potencia la absorción de activos"
     ],
+    image: skinPenImg,
     duration: "30-45 min",
     recovery: "24-48 horas",
     results: "2-4 semanas"
@@ -361,6 +387,7 @@ export const treatments: Treatment[] = [
       "Nutrición del cuero cabelludo",
       "Mejora de la densidad capilar"
     ],
+    image: mesoterapiaCapilarImg,
     duration: "30 min",
     recovery: "Inmediata",
     results: "2-3 meses"
@@ -378,9 +405,28 @@ export const treatments: Treatment[] = [
       "Piel luminosa al instante",
       "Sin tiempo de recuperación"
     ],
+    image: aquapureImg,
     duration: "45-60 min",
     recovery: "Inmediata",
     results: "Inmediato"
+  },
+  {
+    id: "peeling-facial",
+    icon: Leaf,
+    title: "Peeling facial",
+    description: "Exfoliación química para renovar y mejorar la textura de la piel",
+    longDescription: "El peeling facial es un tratamiento de exfoliación química que elimina las capas superficiales de la piel, estimulando la regeneración celular. Mejora la textura, luminosidad, manchas y arrugas finas, revelando una piel más joven y uniforme.",
+    benefits: [
+      "Renovación celular profunda",
+      "Mejora de manchas y tono irregular",
+      "Reducción de arrugas finas",
+      "Textura más suave y uniforme",
+      "Piel más luminosa y radiante"
+    ],
+    image: peelingFacialImg,
+    duration: "30-45 min",
+    recovery: "3-7 días",
+    results: "1-2 semanas"
   }
 ];
 
