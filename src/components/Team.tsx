@@ -1,5 +1,5 @@
 import { Award, GraduationCap, Heart } from "lucide-react";
-import doctorImage from "@/assets/doctor-profile.jpg";
+import doctorImage from "@/assets/dra-daniela-bueno.webp";
 
 const Team = () => {
   return (
