@@ -73,17 +73,17 @@ const Contacto = () => {
                     Contacto directo
                   </h3>
                   <div className="space-y-2 md:space-y-3 text-sm md:text-base">
-                    <a href="tel:+34928123456" className="flex items-center text-muted-foreground hover:text-primary transition-colors">
+                    <a href="tel:+34639374945" className="flex items-center text-muted-foreground hover:text-primary transition-colors">
                       <span className="mr-3">📞</span>
-                      <span>+34 928 12 34 56</span>
+                      <span>+34 639 374 945</span>
                     </a>
-                    <a href="https://wa.me/34928123456?text=Hola, me gustaría pedir una cita" target="_blank" rel="noopener noreferrer" className="flex items-center text-muted-foreground hover:text-primary transition-colors">
+                    <a href="https://wa.me/34639374945?text=Hola, me gustaría pedir una cita" target="_blank" rel="noopener noreferrer" className="flex items-center text-muted-foreground hover:text-primary transition-colors">
                       <span className="mr-3">💬</span>
-                      <span>WhatsApp: 928 12 34 56</span>
+                      <span>WhatsApp: 639 374 945</span>
                     </a>
                     <div className="flex items-start text-muted-foreground">
                       <span className="mr-3">📍</span>
-                      <span>Calle León y Castillo, 234<br />Las Palmas de Gran Canaria</span>
+                      <span>Calle Perdomo Nº8 Local 9<br />35002, Las Palmas de Gran Canaria</span>
                     </div>
                   </div>
                 </div>

@@ -57,7 +57,7 @@ const AppointmentForm = () => {
 
       // Optional: Open WhatsApp with pre-filled message
       setTimeout(() => {
-        window.open(`https://wa.me/34928123456?text=${message}`, '_blank');
+        window.open(`https://wa.me/34639374945?text=${message}`, '_blank');
       }, 1500);
       
     } catch (error) {
@@ -148,7 +148,7 @@ const AppointmentForm = () => {
             id="phone"
             type="tel"
             {...register("phone")}
-            placeholder="928 123 456"
+            placeholder="639 374 945"
             className={errors.phone ? "border-destructive" : ""}
           />
           {errors.phone && (
