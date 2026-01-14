@@ -1,9 +1,12 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import consultaMedicinaEsteticaImg from "@/assets/tratamientos/consulta-medicina-estetica.webp";
+import consultaCapilarImg from "@/assets/tratamientos/consulta-capilar.webp";
 import botoxImg from "@/assets/tratamientos/botox.webp";
 import skinboosterImg from "@/assets/tratamientos/skinbooster.webp";
+import tratamientoLabiosImg from "@/assets/tratamientos/tratamiento-labios.webp";
+import rutinaImg from "@/assets/tratamientos/rutina-dermocosmetica.webp";
 import TreatmentModal from "@/components/TreatmentModal";
 import { getTreatmentById, Treatment } from "@/data/treatments";
 
@@ -13,6 +16,21 @@ interface ServicesProps {
   titleHighlight?: string;
 }
 
+const featuredTreatments = [
+  { id: 'consulta-medicina-estetica', title: 'Consulta de valoración de medicina estética', description: 'Primera consulta para evaluar tus necesidades', image: consultaMedicinaEsteticaImg },
+  { id: 'consulta-capilar', title: 'Consulta de valoración capilar', description: 'Diagnóstico especializado de tu cabello', image: consultaCapilarImg },
+  { id: 'rutina-dermocosmetica', title: 'Rutina dermocosmética individualizada', description: 'Protocolo personalizado para tu día a día', image: rutinaImg },
+  { id: 'neuromoduladores', title: 'Neuromoduladores en tercio superior', description: 'Arrugas de expresión con resultados naturales', image: botoxImg },
+  { id: 'bruxismo', title: 'Bruxismo', description: 'Tratamiento para el bruxismo', image: null },
+  { id: 'hiperhidrosis', title: 'Hiperhidrosis', description: 'Tratamiento para sudoración excesiva', image: botoxImg },
+];
+
+const colors = [
+  "bg-primary", 
+  "bg-secondary", 
+  "bg-[hsl(var(--primary-medium))]"
+];
+
 const Services = ({
   showAllTreatmentsButton = false,
   title = "Tratamientos",
@@ -21,12 +39,40 @@ const Services = ({
   const navigate = useNavigate();
   const [selectedTreatment, setSelectedTreatment] = useState<Treatment | null>(null);
   const [modalOpen, setModalOpen] = useState(false);
+  const [columns, setColumns] = useState(3);
+
+  useEffect(() => {
+    const updateColumns = () => {
+      if (window.innerWidth < 768) {
+        setColumns(2);
+      } else {
+        setColumns(3);
+      }
+    };
+
+    updateColumns();
+    window.addEventListener('resize', updateColumns);
+    return () => window.removeEventListener('resize', updateColumns);
+  }, []);
   
   const handleServiceClick = (serviceId: string) => {
     const treatment = getTreatmentById(serviceId);
     if (treatment) {
       setSelectedTreatment(treatment);
       setModalOpen(true);
+    }
+  };
+
+  const getCardStyle = (index: number, image: string | null) => {
+    const row = Math.floor(index / columns);
+    const col = index % columns;
+    const isImage = (row + col) % 2 === 0;
+    
+    if (isImage && image) {
+      return { type: 'image', image };
+    } else {
+      const colorIndex = index % colors.length;
+      return { type: 'color', color: colors[colorIndex] };
     }
   };
 
@@ -42,8 +88,51 @@ const Services = ({
           </p>
         </div>
 
-        {/* Bento Grid Layout - 2x3 alternando color/imagen */}
-        <div className="max-w-6xl 2xl:max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 auto-rows-[180px] md:auto-rows-[200px] lg:auto-rows-[220px] 2xl:auto-rows-[280px]">
+        {/* Mobile: Grid compacto 2 columnas como en página de tratamientos */}
+        <div className="md:hidden flex flex-wrap justify-center gap-3">
+          {featuredTreatments.map((treatment, index) => {
+            const cardStyle = getCardStyle(index, treatment.image);
+            const cardBaseClass = "w-[calc(50%-6px)] h-[160px]";
+            
+            if (cardStyle.type === 'image') {
+              return (
+                <button
+                  key={treatment.id}
+                  onClick={() => handleServiceClick(treatment.id)}
+                  className={`${cardBaseClass} group relative overflow-hidden rounded-xl hover-lift`}
+                >
+                  <img 
+                    src={cardStyle.image} 
+                    alt={treatment.title} 
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-3">
+                    <h3 className="text-white text-xs font-general-bold leading-tight line-clamp-2">
+                      {treatment.title}
+                    </h3>
+                  </div>
+                </button>
+              );
+            } else {
+              return (
+                <button
+                  key={treatment.id}
+                  onClick={() => handleServiceClick(treatment.id)}
+                  className={`${cardBaseClass} group relative overflow-hidden rounded-xl hover-lift ${cardStyle.color}`}
+                >
+                  <div className="absolute inset-0 flex items-end p-3">
+                    <h3 className="text-white text-xs font-general-bold leading-tight line-clamp-2">
+                      {treatment.title}
+                    </h3>
+                  </div>
+                </button>
+              );
+            }
+          })}
+        </div>
+
+        {/* Desktop: Bento Grid Layout original 3 columnas */}
+        <div className="hidden md:grid max-w-6xl 2xl:max-w-7xl mx-auto grid-cols-3 gap-3 md:gap-4 auto-rows-[200px] lg:auto-rows-[220px] 2xl:auto-rows-[280px]">
           
           {/* Consulta Medicina Estética - IMAGEN */}
           <button onClick={() => handleServiceClick('consulta-medicina-estetica')} className="group relative overflow-hidden rounded-xl md:rounded-2xl hover-lift">
