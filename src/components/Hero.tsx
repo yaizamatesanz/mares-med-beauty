@@ -23,13 +23,13 @@ const Hero = () => {
           <div className="space-y-4 xl:space-y-6">
             <h1 className="text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-light text-white leading-tight">
               Cuidamos tu belleza,<br />
-              <span className="text-secondary font-medium">respetamos tu esencia</span>
+              <span className="text-primary font-medium">respetamos tu esencia</span>
             </h1>
             
           </div>
           
           <div className="flex flex-col sm:flex-row gap-3 xl:gap-4">
-            <Button onClick={() => navigate('/contacto')} className="bg-[#F4A258] hover:bg-[#f5b176] text-white group rounded-full text-sm xl:text-base 2xl:text-lg px-6 xl:px-8 transition-all duration-300 hover:shadow-[var(--shadow-medium)] hover:-translate-y-0.5" size="default">
+            <Button onClick={() => navigate('/contacto')} className="bg-primary hover:bg-primary/90 text-primary-foreground group rounded-full text-sm xl:text-base 2xl:text-lg px-6 xl:px-8 transition-all duration-300 hover:shadow-[var(--shadow-medium)] hover:-translate-y-0.5" size="default">
               <Calendar className="mr-2 h-4 w-4 xl:h-5 xl:w-5" />
               Pedir cita
             </Button>
