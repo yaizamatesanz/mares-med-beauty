@@ -1,6 +1,13 @@
+import * as React from "react";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  type CarouselApi,
+} from "@/components/ui/carousel";
 import consultaMedicinaEsteticaImg from "@/assets/tratamientos/consulta-medicina-estetica.webp";
 import consultaCapilarImg from "@/assets/tratamientos/consulta-capilar.webp";
 import botoxImg from "@/assets/tratamientos/botox.webp";
@@ -40,6 +47,8 @@ const Services = ({
   const [selectedTreatment, setSelectedTreatment] = useState<Treatment | null>(null);
   const [modalOpen, setModalOpen] = useState(false);
   const [columns, setColumns] = useState(3);
+  const [api, setApi] = React.useState<CarouselApi>();
+  const [current, setCurrent] = React.useState(0);
 
   useEffect(() => {
     const updateColumns = () => {
@@ -54,6 +63,15 @@ const Services = ({
     window.addEventListener('resize', updateColumns);
     return () => window.removeEventListener('resize', updateColumns);
   }, []);
+
+  React.useEffect(() => {
+    if (!api) return;
+    
+    setCurrent(api.selectedScrollSnap());
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap());
+    });
+  }, [api]);
   
   const handleServiceClick = (serviceId: string) => {
     const treatment = getTreatmentById(serviceId);
@@ -88,47 +106,69 @@ const Services = ({
           </p>
         </div>
 
-        {/* Mobile: Grid compacto 2 columnas como en página de tratamientos */}
-        <div className="md:hidden flex flex-wrap justify-center gap-3">
-          {featuredTreatments.map((treatment, index) => {
-            const cardStyle = getCardStyle(index, treatment.image);
-            const cardBaseClass = "w-[calc(50%-6px)] h-[160px]";
-            
-            if (cardStyle.type === 'image') {
-              return (
-                <button
-                  key={treatment.id}
-                  onClick={() => handleServiceClick(treatment.id)}
-                  className={`${cardBaseClass} group relative overflow-hidden rounded-xl hover-lift`}
-                >
-                  <img 
-                    src={cardStyle.image} 
-                    alt={treatment.title} 
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-3">
-                    <h3 className="text-white text-xs font-general-bold leading-tight line-clamp-2">
-                      {treatment.title}
-                    </h3>
-                  </div>
-                </button>
-              );
-            } else {
-              return (
-                <button
-                  key={treatment.id}
-                  onClick={() => handleServiceClick(treatment.id)}
-                  className={`${cardBaseClass} group relative overflow-hidden rounded-xl hover-lift ${cardStyle.color}`}
-                >
-                  <div className="absolute inset-0 flex items-end p-3">
-                    <h3 className="text-white text-xs font-general-bold leading-tight line-clamp-2">
-                      {treatment.title}
-                    </h3>
-                  </div>
-                </button>
-              );
-            }
-          })}
+        {/* Mobile: Carousel */}
+        <div className="md:hidden">
+          <Carousel
+            setApi={setApi}
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent className="-ml-3">
+              {featuredTreatments.map((treatment, index) => {
+                const cardStyle = getCardStyle(index, treatment.image);
+                
+                return (
+                  <CarouselItem key={treatment.id} className="pl-3 basis-[85%]">
+                    <button
+                      onClick={() => handleServiceClick(treatment.id)}
+                      className={`w-full h-[200px] group relative overflow-hidden rounded-xl hover-lift ${
+                        cardStyle.type === 'color' ? cardStyle.color : ''
+                      }`}
+                    >
+                      {cardStyle.type === 'image' && (
+                        <img 
+                          src={cardStyle.image} 
+                          alt={treatment.title} 
+                          className="w-full h-full object-cover"
+                        />
+                      )}
+                      <div className={`absolute inset-0 flex items-end p-4 ${
+                        cardStyle.type === 'image' ? 'bg-gradient-to-t from-black/60 to-transparent' : ''
+                      }`}>
+                        <div>
+                          <h3 className="text-white text-base font-general-bold leading-tight mb-1">
+                            {treatment.title}
+                          </h3>
+                          <p className="text-white/80 text-sm line-clamp-2">
+                            {treatment.description}
+                          </p>
+                        </div>
+                      </div>
+                    </button>
+                  </CarouselItem>
+                );
+              })}
+            </CarouselContent>
+          </Carousel>
+          
+          {/* Pagination dots */}
+          <div className="flex justify-center gap-2 mt-4">
+            {featuredTreatments.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => api?.scrollTo(index)}
+                className={`h-2 rounded-full transition-all duration-300 ${
+                  current === index 
+                    ? 'w-6 bg-primary' 
+                    : 'w-2 bg-primary/30'
+                }`}
+                aria-label={`Ir al tratamiento ${index + 1}`}
+              />
+            ))}
+          </div>
         </div>
 
         {/* Desktop: Bento Grid Layout original 3 columnas */}
