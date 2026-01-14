@@ -6,6 +6,17 @@ const Team = () => {
     <section className="py-16 lg:py-20 xl:py-28 2xl:py-32 bg-card">
       <div className="w-[95%] max-w-7xl 2xl:max-w-screen-2xl mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 xl:gap-10 items-center">
+          {/* Mobile: Name first, then image */}
+          <div className="lg:hidden space-y-4 fade-in-up animate text-center">
+            <h3 className="text-2xl md:text-3xl font-general-bold text-foreground">
+              Dra. Daniela Bueno Ventura
+            </h3>
+            <p className="text-primary font-medium text-base">
+              Doctora especialista
+            </p>
+          </div>
+
+          {/* Image */}
           <div className="relative fade-in-up animate max-w-sm md:max-w-md mx-auto lg:mx-0">
             <img 
               src={doctorImage} 
@@ -15,23 +26,24 @@ const Team = () => {
           </div>
 
           <div className="space-y-6 md:space-y-8 xl:space-y-10 fade-in-up animate" style={{ animationDelay: '200ms' }}>
+            {/* Desktop: Name and title (hidden on mobile since it's shown above) */}
             <div className="space-y-3 md:space-y-4 xl:space-y-6">
-              <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-general-bold text-foreground">
+              <h3 className="hidden lg:block text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-general-bold text-foreground">
                 Dra. Daniela Bueno Ventura
               </h3>
-              <p className="text-primary font-medium text-base lg:text-lg 2xl:text-xl">
+              <p className="hidden lg:block text-primary font-medium text-base lg:text-lg 2xl:text-xl">
                 Doctora especialista
               </p>
               <p className="text-muted-foreground text-sm md:text-base lg:text-lg 2xl:text-xl">
                 Doctora colegiada con formación específica en medicina estética y capilar
               </p>
-              <div className="flex items-center gap-2 text-muted-foreground text-sm md:text-base lg:text-lg">
+              <div className="flex items-center justify-center lg:justify-start gap-2 text-muted-foreground text-sm md:text-base lg:text-lg">
                 <Award className="h-4 w-4 xl:h-5 xl:w-5 text-primary" />
                 <span>Socia de la SEME nº 2898</span>
               </div>
             </div>
 
-            <p className="text-base md:text-lg xl:text-xl 2xl:text-2xl text-muted-foreground leading-relaxed">
+            <p className="text-base md:text-lg xl:text-xl 2xl:text-2xl text-muted-foreground leading-relaxed text-center lg:text-left">
               "Mi filosofía se basa en realzar la belleza natural de cada paciente, 
               como las vetas únicas de la piedra marès. Creo en la medicina estética 
               como arte de la sutileza, donde menos es más y la naturalidad es el objetivo."
