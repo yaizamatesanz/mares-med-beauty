@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Calendar, Send, CheckCircle2 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { treatments } from "@/data/treatments";
 
 const appointmentSchema = z.object({
   name: z.string().trim().min(2, "El nombre debe tener al menos 2 caracteres").max(100, "El nombre es demasiado largo"),
@@ -167,12 +168,11 @@ const AppointmentForm = () => {
             }`}
           >
             <option value="">Selecciona un tratamiento</option>
-            <option value="Toxina Botulínica">Toxina Botulínica</option>
-            <option value="Rellenos faciales">Rellenos faciales</option>
-            <option value="Skin Boosters">Skin Boosters</option>
-            <option value="Hilos tensores">Hilos tensores</option>
-            <option value="Rejuvenecimiento facial">Rejuvenecimiento facial</option>
-            <option value="Consulta general">Consulta general</option>
+            {treatments.map((treatment) => (
+              <option key={treatment.id} value={treatment.title}>
+                {treatment.title}
+              </option>
+            ))}
           </select>
           {errors.treatment && (
             <p className="text-sm text-destructive mt-1">{errors.treatment.message}</p>
