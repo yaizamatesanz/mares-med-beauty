@@ -91,8 +91,7 @@ const Contacto = () => {
                 <div className="bg-background/90 backdrop-blur-sm p-5 md:p-6 rounded-xl shadow-soft">
                   <p className="text-sm md:text-base text-muted-foreground">
                     <strong className="text-foreground">Horario de atención:</strong><br />
-                    Lunes a Viernes: 09:00 - 19:00<br />
-                    Sábados: 09:00 - 14:00
+                    Lunes a Viernes: 09:00 - 19:00
                   </p>
                 </div>
               </div>
