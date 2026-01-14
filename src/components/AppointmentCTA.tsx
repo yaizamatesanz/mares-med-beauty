@@ -48,7 +48,7 @@ tu cita rápidamente
             </div>
           </div>
 
-          <Button onClick={() => navigate('/reservar-cita')} size="lg" className="cta-premium rounded-full text-lg xl:text-xl 2xl:text-2xl px-12 xl:px-16 py-6 xl:py-8 h-auto">
+          <Button onClick={() => navigate('/contacto')} size="lg" className="cta-premium rounded-full text-lg xl:text-xl 2xl:text-2xl px-12 xl:px-16 py-6 xl:py-8 h-auto">
             Reservar mi cita ahora
           </Button>
 
