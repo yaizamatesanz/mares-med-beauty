@@ -95,12 +95,8 @@ const Contact = () => {
                   <h4 className="text-xl font-general-bold text-foreground">
                     Clínica Marès
                   </h4>
-                  <p className="text-muted-foreground">
-                    Calle Perdomo nº8 Local 9<br />
-                    Las Palmas de Gran Canaria
-                  </p>
                   <Button onClick={openGoogleMaps} className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-3 font-semibold shadow-strong">
-                    Abrir mapa interactivo
+                    Ver ubicación
                   </Button>
                 </div>
                 
