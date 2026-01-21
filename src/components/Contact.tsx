@@ -86,36 +86,27 @@ const Contact = () => {
 
           {/* Ubicación */}
           <div className="fade-in-up animate h-full" style={{ animationDelay: '200ms' }}>
-            <div className="bg-[#F2E6D7]/80 backdrop-blur-sm p-8 xl:p-10 2xl:p-12 rounded-2xl border border-border shadow-strong h-full">
-              <h3 className="text-2xl xl:text-3xl 2xl:text-4xl font-general-bold text-foreground mb-6 xl:mb-8">
-                Nuestra ubicación
-              </h3>
-
-              <div className="space-y-6 xl:space-y-8">
-                <div className="flex items-start space-x-4 xl:space-x-6">
-                  <div className="w-12 h-12 xl:w-14 xl:h-14 2xl:w-16 2xl:h-16 bg-[#F4A258] rounded-xl flex items-center justify-center flex-shrink-0">
-                    <MapPin className="h-6 w-6 xl:h-7 xl:w-7 2xl:h-8 2xl:w-8 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-1 text-base xl:text-lg 2xl:text-xl">
-                      Clínica Marès
-                    </h4>
-                    <p className="text-muted-foreground text-sm lg:text-base xl:text-lg mb-4">
-                      Calle Perdomo nº8 Local 9<br />
-                      35002 Las Palmas de Gran Canaria
-                    </p>
-                    <a 
-                      href="https://www.google.com/maps/search/?api=1&query=Calle+Perdomo+Nº8+Local+9,+35002,+Las+Palmas+de+Gran+Canaria"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 bg-primary text-primary-foreground hover:bg-primary/90 px-6 py-2.5 font-semibold shadow-strong rounded-md transition-colors text-sm xl:text-base"
-                    >
-                      <MapPin className="h-4 w-4" />
-                      Ver ubicación
-                    </a>
-                  </div>
-                </div>
-              </div>
+            <div className="bg-[#F2E6D7]/80 backdrop-blur-sm p-8 xl:p-10 2xl:p-12 rounded-2xl border border-border shadow-strong h-full flex flex-col items-center justify-center text-center">
+              <MapPin className="h-16 w-16 xl:h-20 xl:w-20 text-primary mb-6" />
+              
+              <h4 className="font-general-bold text-foreground mb-3 text-xl xl:text-2xl 2xl:text-3xl">
+                Clínica Marès
+              </h4>
+              
+              <p className="text-muted-foreground text-sm lg:text-base xl:text-lg mb-6">
+                Calle Perdomo nº8 Local 9<br />
+                Las Palmas de Gran Canaria
+              </p>
+              
+              <a 
+                href="https://www.google.com/maps/search/?api=1&query=Calle+Perdomo+Nº8+Local+9,+35002,+Las+Palmas+de+Gran+Canaria"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-3 font-semibold shadow-strong rounded-md transition-colors text-sm xl:text-base"
+              >
+                <MapPin className="h-4 w-4" />
+                Ver ubicación
+              </a>
             </div>
           </div>
         </div>
