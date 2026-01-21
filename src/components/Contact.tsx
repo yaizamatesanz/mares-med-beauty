@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import contactBg from "@/assets/fondo-contacto.webp";
 const Contact = () => {
   const openGoogleMaps = () => {
-    window.open('https://www.google.com/maps/search/?api=1&query=Calle+Perdomo+Nº8+Local+9,+35002,+Las+Palmas+de+Gran+Canaria', '_blank');
+    window.open('https://www.google.com/maps/search/?api=1&query=Calle+Perdomo+8,+Las+Palmas+de+Gran+Canaria', '_blank');
   };
   const openWhatsApp = () => {
     window.open('https://wa.me/34639374945?text=Hola, me gustaría pedir información sobre tratamientos', '_blank');
@@ -99,7 +99,7 @@ const Contact = () => {
               </p>
               
               <a 
-                href="https://www.google.com/maps/search/?api=1&query=Calle+Perdomo+Nº8+Local+9,+35002,+Las+Palmas+de+Gran+Canaria"
+                href="https://www.google.com/maps/search/?api=1&query=Calle+Perdomo+8,+Las+Palmas+de+Gran+Canaria"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-3 font-semibold shadow-strong rounded-md transition-colors text-sm xl:text-base"
