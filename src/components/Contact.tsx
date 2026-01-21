@@ -95,9 +95,14 @@ const Contact = () => {
                   <h4 className="text-xl font-general-bold text-foreground">
                     Clínica Marès
                   </h4>
-                  <Button onClick={openGoogleMaps} className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-3 font-semibold shadow-strong">
+                  <a 
+                    href="https://www.google.com/maps/search/?api=1&query=Calle+Perdomo+Nº8+Local+9,+35002,+Las+Palmas+de+Gran+Canaria"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-3 font-semibold shadow-strong rounded-md transition-colors"
+                  >
                     Ver ubicación
-                  </Button>
+                  </a>
                 </div>
                 
                 {/* Overlay que simula un mapa */}
