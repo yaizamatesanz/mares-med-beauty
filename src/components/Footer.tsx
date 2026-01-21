@@ -59,9 +59,14 @@ const Footer = () => {
           {/* Social Media */}
           <div className="flex items-center space-x-3 md:space-x-4">
             <p className="text-primary-foreground/90 text-sm lg:text-base mr-2">Síguenos:</p>
-            <div className="w-9 h-9 md:w-10 md:h-10 lg:w-11 lg:h-11 bg-primary-foreground/10 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-primary-foreground hover:text-primary transition-colors cursor-pointer">
+            <a 
+              href="https://www.instagram.com/mares_clinic/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="w-9 h-9 md:w-10 md:h-10 lg:w-11 lg:h-11 bg-primary-foreground/10 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-primary-foreground hover:text-primary transition-colors"
+            >
               <Instagram className="h-4 w-4 md:h-5 md:w-5 text-primary-foreground" />
-            </div>
+            </a>
             <div className="w-9 h-9 md:w-10 md:h-10 lg:w-11 lg:h-11 bg-primary-foreground/10 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-primary-foreground hover:text-primary transition-colors cursor-pointer">
               <Facebook className="h-4 w-4 md:h-5 md:w-5 text-primary-foreground" />
             </div>
