@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import contactBg from "@/assets/fondo-contacto.webp";
 const Contact = () => {
   const openGoogleMaps = () => {
-    window.open('https://www.google.com/maps/search/Calle+Perdomo+8+Las+Palmas+de+Gran+Canaria', '_blank');
+    window.open('https://www.google.com/maps/search/?api=1&query=Calle+Perdomo+Nº8+Local+9,+35002,+Las+Palmas+de+Gran+Canaria', '_blank');
   };
   const openWhatsApp = () => {
     window.open('https://wa.me/34639374945?text=Hola, me gustaría pedir información sobre tratamientos', '_blank');
