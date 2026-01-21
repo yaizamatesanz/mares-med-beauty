@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useNavigate, useLocation } from "react-router-dom";
 import { Menu } from "lucide-react";
-import logoMares from "@/assets/logo-mares-2.svg";
+import logoMares from "@/assets/logo-mares-new.svg";
 
 const scrollToSection = (sectionId: string) => {
   const element = document.getElementById(sectionId);
