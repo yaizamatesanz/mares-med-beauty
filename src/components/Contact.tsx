@@ -84,38 +84,36 @@ const Contact = () => {
             
           </div>
 
-          {/* Map Placeholder */}
-          <div className="fade-in-up animate h-full" style={{
-          animationDelay: '200ms'
-        }}>
-            <div className="bg-[#F2E6D7]/80 backdrop-blur-sm rounded-2xl border border-border overflow-hidden h-full shadow-strong">
-              <div className="relative w-full h-full flex items-center justify-center">
-                <div className="text-center space-y-4 p-8">
-                  <MapPin className="h-16 w-16 text-primary mx-auto" />
-                  <h4 className="text-xl font-general-bold text-foreground">
-                    Clínica Marès
-                  </h4>
-                  <a 
-                    href="https://www.google.com/maps/search/?api=1&query=Calle+Perdomo+Nº8+Local+9,+35002,+Las+Palmas+de+Gran+Canaria"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-3 font-semibold shadow-strong rounded-md transition-colors"
-                  >
-                    Ver ubicación
-                  </a>
-                </div>
-                
-                {/* Overlay que simula un mapa */}
-                <div className="absolute inset-0 opacity-10">
-                  <svg viewBox="0 0 400 400" className="w-full h-full text-muted-foreground">
-                    <defs>
-                      <pattern id="map-pattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
-                        <rect width="40" height="40" fill="none" stroke="currentColor" strokeWidth="0.5" />
-                      </pattern>
-                    </defs>
-                    <rect width="100%" height="100%" fill="url(#map-pattern)" />
-                    <circle cx="200" cy="200" r="8" fill="currentColor" />
-                  </svg>
+          {/* Ubicación */}
+          <div className="fade-in-up animate h-full" style={{ animationDelay: '200ms' }}>
+            <div className="bg-[#F2E6D7]/80 backdrop-blur-sm p-8 xl:p-10 2xl:p-12 rounded-2xl border border-border shadow-strong h-full">
+              <h3 className="text-2xl xl:text-3xl 2xl:text-4xl font-general-bold text-foreground mb-6 xl:mb-8">
+                Nuestra ubicación
+              </h3>
+
+              <div className="space-y-6 xl:space-y-8">
+                <div className="flex items-start space-x-4 xl:space-x-6">
+                  <div className="w-12 h-12 xl:w-14 xl:h-14 2xl:w-16 2xl:h-16 bg-[#F4A258] rounded-xl flex items-center justify-center flex-shrink-0">
+                    <MapPin className="h-6 w-6 xl:h-7 xl:w-7 2xl:h-8 2xl:w-8 text-primary" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-1 text-base xl:text-lg 2xl:text-xl">
+                      Clínica Marès
+                    </h4>
+                    <p className="text-muted-foreground text-sm lg:text-base xl:text-lg mb-4">
+                      Calle Perdomo nº8 Local 9<br />
+                      35002 Las Palmas de Gran Canaria
+                    </p>
+                    <a 
+                      href="https://www.google.com/maps/search/?api=1&query=Calle+Perdomo+Nº8+Local+9,+35002,+Las+Palmas+de+Gran+Canaria"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 bg-primary text-primary-foreground hover:bg-primary/90 px-6 py-2.5 font-semibold shadow-strong rounded-md transition-colors text-sm xl:text-base"
+                    >
+                      <MapPin className="h-4 w-4" />
+                      Ver ubicación
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
