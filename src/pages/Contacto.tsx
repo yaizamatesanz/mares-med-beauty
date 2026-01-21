@@ -81,10 +81,15 @@ const Contacto = () => {
                       <span className="mr-3">💬</span>
                       <span>WhatsApp: 639 374 945</span>
                     </a>
-                    <div className="flex items-start text-muted-foreground">
+                    <a 
+                      href="https://www.google.com/maps/search/?api=1&query=Calle+Perdomo+Nº8+Local+9,+35002,+Las+Palmas+de+Gran+Canaria" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="flex items-center text-muted-foreground hover:text-primary transition-colors"
+                    >
                       <span className="mr-3">📍</span>
-                      <span>Calle Perdomo Nº8 Local 9<br />35002, Las Palmas de Gran Canaria</span>
-                    </div>
+                      <span>Ver ubicación</span>
+                    </a>
                   </div>
                 </div>
 
