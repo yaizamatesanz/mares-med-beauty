@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useNavigate, useLocation } from "react-router-dom";
 import { Menu } from "lucide-react";
-import logoMares from "@/assets/logo-mares-new.jpg";
+import logoMares from "@/assets/logo-mares-2.svg";
 
 const scrollToSection = (sectionId: string) => {
   const element = document.getElementById(sectionId);
@@ -34,15 +34,7 @@ const Header = () => {
             <img 
               src={logoMares}
               alt="MARÈS - Medicina Estética Dra. Daniela Bueno" 
-              className="h-14 w-auto object-contain"
-              style={{ 
-                imageRendering: '-webkit-optimize-contrast',
-                WebkitBackfaceVisibility: 'hidden',
-                backfaceVisibility: 'hidden',
-                transform: 'translateZ(0)'
-              }}
-              loading="eager"
-              decoding="sync"
+              className="h-14 w-auto"
             />
           </div>
 
