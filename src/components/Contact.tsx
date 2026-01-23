@@ -54,9 +54,13 @@ const Contact = () => {
                     <Phone className="h-6 w-6 xl:h-7 xl:w-7 2xl:h-8 2xl:w-8 text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground mb-1 text-base xl:text-lg 2xl:text-xl">Teléfono</h4>
-                    <a href="tel:+34639374945" className="text-muted-foreground hover:text-foreground transition-colors text-sm lg:text-base xl:text-lg">
-                      639 37 49 45
+                    <h4 className="font-semibold text-foreground mb-2 text-base xl:text-lg 2xl:text-xl">Teléfono fijo</h4>
+                    <a href="tel:+34928471488" className="text-muted-foreground hover:text-foreground transition-colors text-sm lg:text-base xl:text-lg block mb-2">
+                      928 471 488
+                    </a>
+                    <h4 className="font-semibold text-foreground mb-1 text-base xl:text-lg 2xl:text-xl">WhatsApp</h4>
+                    <a href="https://wa.me/34639374945?text=Hola, me gustaría pedir información sobre tratamientos" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors text-sm lg:text-base xl:text-lg">
+                      639 374 945
                     </a>
                   </div>
                 </div>

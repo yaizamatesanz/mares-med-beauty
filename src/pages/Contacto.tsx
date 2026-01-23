@@ -73,9 +73,9 @@ const Contacto = () => {
                     Contacto directo
                   </h3>
                   <div className="space-y-2 md:space-y-3 text-sm md:text-base">
-                    <a href="tel:+34639374945" className="flex items-center text-muted-foreground hover:text-primary transition-colors">
+                    <a href="tel:+34928471488" className="flex items-center text-muted-foreground hover:text-primary transition-colors">
                       <span className="mr-3">📞</span>
-                      <span>+34 639 374 945</span>
+                      <span>+34 928 471 488</span>
                     </a>
                     <a href="https://wa.me/34639374945?text=Hola, me gustaría pedir una cita" target="_blank" rel="noopener noreferrer" className="flex items-center text-muted-foreground hover:text-primary transition-colors">
                       <span className="mr-3">💬</span>

@@ -148,7 +148,7 @@ const AppointmentForm = () => {
             id="phone"
             type="tel"
             {...register("phone")}
-            placeholder="639 374 945"
+            placeholder="928 471 488"
             className={errors.phone ? "border-destructive" : ""}
           />
           {errors.phone && (
