@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Clock, Instagram, Facebook } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Instagram } from "lucide-react";
 import { useNavigate, useLocation } from "react-router-dom";
 
 const Footer = () => {
@@ -67,9 +67,6 @@ const Footer = () => {
             >
               <Instagram className="h-4 w-4 md:h-5 md:w-5 text-primary-foreground" />
             </a>
-            <div className="w-9 h-9 md:w-10 md:h-10 lg:w-11 lg:h-11 bg-primary-foreground/10 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-primary-foreground hover:text-primary transition-colors cursor-pointer">
-              <Facebook className="h-4 w-4 md:h-5 md:w-5 text-primary-foreground" />
-            </div>
           </div>
         </div>
 
