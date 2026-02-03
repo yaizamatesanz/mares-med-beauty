@@ -31,7 +31,7 @@ const Cookies = () => {
             <section className="space-y-4">
               <h2 className="text-xl font-semibold text-foreground">2. ¿Quién utiliza la información de las cookies?</h2>
               <p>
-                La información recogida por las cookies es utilizada exclusivamente por [NOMBRE DEL TITULAR], con CIF/NIF [CIF/NIF DEL TITULAR], con domicilio en Calle Perdomo nº8 Local 9, 35002 Las Palmas de Gran Canaria.
+                La información recogida por las cookies es utilizada exclusivamente por Daniela Bueno Ventura, con NIF [DNI DE DANIELA], con domicilio en Calle Perdomo nº8 Local 9, 35002 Las Palmas de Gran Canaria.
               </p>
             </section>
 
@@ -83,7 +83,7 @@ const Cookies = () => {
             <section className="space-y-4">
               <h2 className="text-xl font-semibold text-foreground">5. Actualización de la política de cookies</h2>
               <p>
-                [NOMBRE DEL TITULAR] puede modificar esta Política de Cookies en función de exigencias legislativas, reglamentarias, o con la finalidad de adaptar dicha política a las instrucciones dictadas por la Agencia Española de Protección de Datos. Por ello, se aconseja a los usuarios que la visiten periódicamente.
+                Daniela Bueno Ventura puede modificar esta Política de Cookies en función de exigencias legislativas, reglamentarias, o con la finalidad de adaptar dicha política a las instrucciones dictadas por la Agencia Española de Protección de Datos. Por ello, se aconseja a los usuarios que la visiten periódicamente.
               </p>
               <p>
                 Cuando se produzcan cambios significativos en esta Política de Cookies, se comunicará a los usuarios mediante un aviso informativo en el sitio web.
