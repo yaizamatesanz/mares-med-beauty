@@ -27,10 +27,10 @@ const PoliticaPrivacidad = () => {
                 En cumplimiento del Reglamento (UE) 2016/679 General de Protección de Datos (RGPD) y la Ley Orgánica 3/2018 de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD), le informamos que los datos personales que nos facilite serán tratados por:
               </p>
               <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Responsable:</strong> [NOMBRE COMPLETO DE LA SOCIEDAD O "Daniela Bueno Ventura"]</li>
-                <li><strong>CIF/NIF:</strong> [CIF DE LA SOCIEDAD o DNI DE DANIELA]</li>
+                <li><strong>Responsable:</strong> Daniela Bueno Ventura</li>
+                <li><strong>NIF:</strong> [DNI DE DANIELA]</li>
                 <li><strong>Domicilio:</strong> Calle Perdomo nº8 Local 9, 35002 Las Palmas de Gran Canaria</li>
-                <li><strong>Email:</strong> [EMAIL OFICIAL PARA PROTECCIÓN DE DATOS]</li>
+                <li><strong>Email:</strong> [EMAIL OFICIAL]</li>
                 <li><strong>Teléfono:</strong> 928 471 488</li>
               </ul>
             </section>
@@ -114,14 +114,14 @@ const PoliticaPrivacidad = () => {
             <section className="space-y-4">
               <h2 className="text-xl font-semibold text-foreground">8. Medidas de seguridad</h2>
               <p>
-                [NOMBRE DEL TITULAR] ha adoptado las medidas técnicas y organizativas necesarias para garantizar la seguridad de los datos personales y evitar su alteración, pérdida, tratamiento o acceso no autorizado, teniendo en cuenta el estado de la tecnología, la naturaleza de los datos y los riesgos a los que están expuestos.
+                Daniela Bueno Ventura ha adoptado las medidas técnicas y organizativas necesarias para garantizar la seguridad de los datos personales y evitar su alteración, pérdida, tratamiento o acceso no autorizado, teniendo en cuenta el estado de la tecnología, la naturaleza de los datos y los riesgos a los que están expuestos.
               </p>
             </section>
 
             <section className="space-y-4">
               <h2 className="text-xl font-semibold text-foreground">9. Modificaciones de la política de privacidad</h2>
               <p>
-                [NOMBRE DEL TITULAR] se reserva el derecho a modificar la presente Política de Privacidad para adaptarla a novedades legislativas o jurisprudenciales. En dichos supuestos, se anunciará en esta página los cambios introducidos con razonable antelación a su puesta en práctica.
+                Daniela Bueno Ventura se reserva el derecho a modificar la presente Política de Privacidad para adaptarla a novedades legislativas o jurisprudenciales. En dichos supuestos, se anunciará en esta página los cambios introducidos con razonable antelación a su puesta en práctica.
               </p>
             </section>
 
