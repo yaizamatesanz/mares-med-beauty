@@ -8,6 +8,9 @@ import Tratamientos from "./pages/Tratamientos";
 import PreguntasFrecuentes from "./pages/PreguntasFrecuentes";
 import Contacto from "./pages/Contacto";
 import ReservarCita from "./pages/ReservarCita";
+import AvisoLegal from "./pages/AvisoLegal";
+import PoliticaPrivacidad from "./pages/PoliticaPrivacidad";
+import Cookies from "./pages/Cookies";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +27,9 @@ const App = () => (
           <Route path="/preguntas-frecuentes" element={<PreguntasFrecuentes />} />
           <Route path="/contacto" element={<Contacto />} />
           <Route path="/reservar-cita" element={<ReservarCita />} />
+          <Route path="/aviso-legal" element={<AvisoLegal />} />
+          <Route path="/politica-privacidad" element={<PoliticaPrivacidad />} />
+          <Route path="/cookies" element={<Cookies />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
