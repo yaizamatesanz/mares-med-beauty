@@ -35,6 +35,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { supabase } from "@/integrations/supabase/client";
 
 const formSchema = z.object({
   nombre: z.string().trim().min(2, { message: "El nombre debe tener al menos 2 caracteres" }).max(100, { message: "El nombre es demasiado largo" }),
@@ -94,14 +95,28 @@ const ReservarCita = () => {
     setIsSubmitting(true);
     
     try {
-      // Aquí iría la lógica para enviar la reserva
-      // Por ahora solo mostramos un toast de éxito
+      const formattedDate = format(values.fecha, "PPP", { locale: es });
       
-      await new Promise(resolve => setTimeout(resolve, 1000)); // Simular envío
+      // Send email via edge function
+      const { error } = await supabase.functions.invoke("send-appointment-email", {
+        body: {
+          name: `${values.nombre} ${values.apellidos}`,
+          email: values.email,
+          phone: values.telefono,
+          treatment: values.tratamiento,
+          preferredDate: formattedDate,
+          preferredTime: values.hora,
+          message: values.mensaje,
+        },
+      });
+
+      if (error) {
+        throw error;
+      }
       
       toast({
         title: "¡Solicitud enviada!",
-        description: `Gracias ${values.nombre}, hemos recibido tu solicitud para el ${format(values.fecha, "PPP", { locale: es })} a las ${values.hora}. Te contactaremos pronto para confirmar tu cita.`,
+        description: `Gracias ${values.nombre}, hemos recibido tu solicitud para el ${formattedDate} a las ${values.hora}. Te contactaremos pronto para confirmar tu cita.`,
       });
       
       // Redirigir después de 2 segundos
@@ -110,6 +125,7 @@ const ReservarCita = () => {
       }, 2000);
       
     } catch (error) {
+      console.error("Error sending appointment email:", error);
       toast({
         title: "Error",
         description: "Ha ocurrido un error al enviar tu solicitud. Por favor, inténtalo de nuevo.",

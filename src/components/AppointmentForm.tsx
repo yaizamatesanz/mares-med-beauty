@@ -8,6 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Calendar, Send, CheckCircle2 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { treatments } from "@/data/treatments";
+import { supabase } from "@/integrations/supabase/client";
 
 const appointmentSchema = z.object({
   name: z.string().trim().min(2, "El nombre debe tener al menos 2 caracteres").max(100, "El nombre es demasiado largo"),
@@ -34,18 +35,20 @@ const AppointmentForm = () => {
 
   const onSubmit = async (data: AppointmentFormData) => {
     try {
-      // Encode data properly for WhatsApp
-      const message = encodeURIComponent(
-        `*Nueva solicitud de cita*\n\n` +
-        `*Nombre:* ${data.name}\n` +
-        `*Email:* ${data.email}\n` +
-        `*Teléfono:* ${data.phone}\n` +
-        `*Tratamiento:* ${data.treatment}\n` +
-        `${data.message ? `*Mensaje:* ${data.message}` : ''}`
-      );
-      
-      // Simulate form submission
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      // Send email via edge function
+      const { error } = await supabase.functions.invoke("send-appointment-email", {
+        body: {
+          name: data.name,
+          email: data.email,
+          phone: data.phone,
+          treatment: data.treatment,
+          message: data.message,
+        },
+      });
+
+      if (error) {
+        throw error;
+      }
       
       setIsSubmitted(true);
       reset();
@@ -56,14 +59,23 @@ const AppointmentForm = () => {
       });
 
       // Optional: Open WhatsApp with pre-filled message
+      const whatsappMessage = encodeURIComponent(
+        `*Nueva solicitud de cita*\n\n` +
+        `*Nombre:* ${data.name}\n` +
+        `*Email:* ${data.email}\n` +
+        `*Teléfono:* ${data.phone}\n` +
+        `*Tratamiento:* ${data.treatment}\n` +
+        `${data.message ? `*Mensaje:* ${data.message}` : ''}`
+      );
       setTimeout(() => {
-        window.open(`https://wa.me/34639374945?text=${message}`, '_blank');
+        window.open(`https://wa.me/34639374945?text=${whatsappMessage}`, '_blank');
       }, 1500);
       
     } catch (error) {
+      console.error("Error sending appointment email:", error);
       toast({
         title: "Error",
-        description: "Hubo un problema. Por favor intenta de nuevo.",
+        description: "Hubo un problema al enviar tu solicitud. Por favor intenta de nuevo.",
         variant: "destructive",
       });
     }
