@@ -74,7 +74,7 @@ const Footer = () => {
         <div className="pt-6 border-t border-primary-foreground/20">
           <p className="text-primary-foreground/70 text-xs lg:text-sm text-center leading-relaxed max-w-4xl mx-auto">
             Clínica Marès es un centro sanitario autorizado por la Consejería de Sanidad del Gobierno de Canarias. 
-            Registro Sanitario: C-35-000XX. Directora médica: Dra. Daniela Bueno Ventura (Socia de la SEME con nº 2898 de colegiación). 
+            Directora médica: Dra. Daniela Bueno Ventura (Socia de la SEME con nº 2898 de colegiación). 
             Los tratamientos de medicina estética deben ser siempre realizados por médicos colegiados.
           </p>
         </div>
