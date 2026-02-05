@@ -57,19 +57,6 @@ const AppointmentForm = () => {
         title: "¡Solicitud enviada!",
         description: "Te contactaremos pronto para confirmar tu cita.",
       });
-
-      // Optional: Open WhatsApp with pre-filled message
-      const whatsappMessage = encodeURIComponent(
-        `*Nueva solicitud de cita*\n\n` +
-        `*Nombre:* ${data.name}\n` +
-        `*Email:* ${data.email}\n` +
-        `*Teléfono:* ${data.phone}\n` +
-        `*Tratamiento:* ${data.treatment}\n` +
-        `${data.message ? `*Mensaje:* ${data.message}` : ''}`
-      );
-      setTimeout(() => {
-        window.open(`https://wa.me/34639374945?text=${whatsappMessage}`, '_blank');
-      }, 1500);
       
     } catch (error) {
       console.error("Error sending appointment email:", error);
