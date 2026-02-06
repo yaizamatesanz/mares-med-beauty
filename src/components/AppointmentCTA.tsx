@@ -31,9 +31,7 @@ que mejor te convenga
               <h3 className="text-lg xl:text-xl 2xl:text-2xl font-general-bold text-foreground mb-2">
                 Horario flexible
               </h3>
-              <p className="text-sm lg:text-base xl:text-lg text-foreground/70">
-                Disponibilidad de lunes a sábado
-              </p>
+              <p className="text-sm lg:text-base xl:text-lg text-foreground/70">Disponibilidad de lunes a viernes</p>
             </div>
 
             <div className="flex flex-col items-center p-6 xl:p-8 rounded-lg bg-background/50 backdrop-blur-sm border border-border/50">
