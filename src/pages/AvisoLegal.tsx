@@ -17,93 +17,72 @@ const AvisoLegal = () => {
           </h1>
           
           <div className="prose prose-lg max-w-none text-muted-foreground space-y-8">
-            <p className="text-sm text-muted-foreground/70">
-              Última actualización: Febrero 2026
-            </p>
-
             <section className="space-y-4">
-              <h2 className="text-xl font-semibold text-foreground">1. Identificación del titular</h2>
+              <h2 className="text-xl font-semibold text-foreground">1. Identificación del titular del sitio web</h2>
               <p>
-                En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y Comercio Electrónico (LSSI-CE), se informa a los usuarios de los datos identificativos del titular de este sitio web:
+                En cumplimiento de lo establecido en la Ley 34/2002, de Servicios de la Sociedad de la Información y Comercio Electrónico (LSSI-CE), se informa que este sitio web es propiedad de:
               </p>
               <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Titular:</strong> Daniela Bueno Ventura</li>
-                <li><strong>NIF:</strong> [DNI DE DANIELA]</li>
-                <li><strong>Domicilio:</strong> Calle Perdomo nº8 Local 9, 35002 Las Palmas de Gran Canaria</li>
-                <li><strong>Teléfono:</strong> 928 471 488</li>
-                <li><strong>Email:</strong> [EMAIL OFICIAL]</li>
-                <li><strong>Nº colegiado SEME:</strong> 2898</li>
+                <li><strong>Titular:</strong> Clínica Marès</li>
+                <li><strong>NIF/CIF:</strong> 78512273W</li>
+                <li><strong>Domicilio:</strong> Calle Perdomo número 8 local 9, CP 35002, Las Palmas de Gran Canaria</li>
+                <li><strong>Correo electrónico:</strong> contacto@clinicamares.com</li>
+                <li><strong>Teléfono:</strong> 639 374 945</li>
               </ul>
             </section>
 
             <section className="space-y-4">
-              <h2 className="text-xl font-semibold text-foreground">2. Objeto y ámbito de aplicación</h2>
+              <h2 className="text-xl font-semibold text-foreground">2. Registro sanitario y profesionales sanitarios</h2>
               <p>
-                El presente Aviso Legal regula el acceso y uso del sitio web clinicamares.com (en adelante, el "Sitio Web"), propiedad de Daniela Bueno Ventura. El acceso al Sitio Web atribuye la condición de usuario e implica la aceptación plena y sin reservas de todas las disposiciones incluidas en este Aviso Legal.
+                Este centro está registrado y autorizado como clínica sanitaria:
               </p>
+              <ul className="list-disc pl-6 space-y-2">
+                <li><strong>Número de autorización:</strong> 9643</li>
+                <li><strong>Autoridad competente:</strong> Las Palmas</li>
+              </ul>
+              <p>
+                Los tratamientos médicos o estéticos son realizados exclusivamente por profesionales cualificados y colegiados:
+              </p>
+              <ul className="list-disc pl-6 space-y-2">
+                <li><strong>Daniela Bueno Ventura</strong></li>
+                <li>Titulación: Graduada en Medicina</li>
+                <li>Nº de colegiado: 35/35/08868</li>
+                <li>Colegio profesional: Las Palmas</li>
+              </ul>
             </section>
 
             <section className="space-y-4">
-              <h2 className="text-xl font-semibold text-foreground">3. Condiciones de uso</h2>
+              <h2 className="text-xl font-semibold text-foreground">3. Objeto y condiciones de uso</h2>
               <p>
-                El usuario se compromete a utilizar el Sitio Web de conformidad con la ley, el presente Aviso Legal, y las buenas costumbres. A tal efecto, el usuario se abstendrá de utilizar el Sitio Web con fines ilícitos, lesivos de derechos de terceros, o que de cualquier forma puedan dañar, inutilizar o deteriorar el Sitio Web.
+                El acceso a esta web tiene carácter informativo y promocional, ofreciendo información sobre tratamientos médicos y estéticos, servicios, instalaciones y contacto.
               </p>
+              <p>El usuario se compromete a:</p>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>Utilizar los contenidos de manera lícita y responsable</li>
+                <li>No difundir información falsa o engañosa</li>
+                <li>No intentar vulnerar la seguridad del sitio</li>
+              </ul>
             </section>
 
             <section className="space-y-4">
               <h2 className="text-xl font-semibold text-foreground">4. Propiedad intelectual e industrial</h2>
               <p>
-                Todos los contenidos del Sitio Web, incluyendo, sin carácter limitativo, textos, fotografías, gráficos, imágenes, iconos, tecnología, software, links y demás contenidos audiovisuales, así como su diseño gráfico y códigos fuente, son propiedad intelectual de Daniela Bueno Ventura o de terceros, sin que puedan entenderse cedidos al usuario ninguno de los derechos de explotación sobre los mismos más allá de lo estrictamente necesario para el correcto uso del Sitio Web.
-              </p>
-              <p>
-                Las marcas, nombres comerciales o signos distintivos son titularidad de Daniela Bueno Ventura o terceros, sin que pueda entenderse que el acceso al Sitio Web atribuya ningún derecho sobre los mismos.
+                Todos los contenidos de esta web, incluyendo textos, imágenes, gráficos, logotipos, software y código, son propiedad de la clínica o de terceros que han autorizado su uso. Queda prohibida su reproducción total o parcial sin autorización expresa.
               </p>
             </section>
 
             <section className="space-y-4">
-              <h2 className="text-xl font-semibold text-foreground">5. Exclusión de responsabilidad</h2>
+              <h2 className="text-xl font-semibold text-foreground">5. Responsabilidad</h2>
               <p>
-                Daniela Bueno Ventura no se hace responsable de los daños y perjuicios de cualquier naturaleza que pudieran ocasionarse por:
+                La información publicada tiene carácter orientativo y educativo, y no sustituye la consulta médica presencial. La clínica no se hace responsable de los daños derivados del uso incorrecto de la información, ni de errores en los contenidos o interrupciones en el funcionamiento de la web.
               </p>
-              <ul className="list-disc pl-6 space-y-2">
-                <li>La falta de disponibilidad, mantenimiento y efectivo funcionamiento del Sitio Web o de sus servicios y contenidos.</li>
-                <li>La existencia de virus, programas maliciosos o lesivos en los contenidos.</li>
-                <li>El uso ilícito, negligente, fraudulento o contrario a este Aviso Legal.</li>
-                <li>La falta de licitud, calidad, fiabilidad, utilidad y disponibilidad de los servicios prestados por terceros y puestos a disposición de los usuarios en el Sitio Web.</li>
-              </ul>
             </section>
 
             <section className="space-y-4">
               <h2 className="text-xl font-semibold text-foreground">6. Enlaces externos</h2>
               <p>
-                El Sitio Web puede contener enlaces a sitios web de terceros. Daniela Bueno Ventura no asume ninguna responsabilidad por el contenido, informaciones o servicios que pudieran aparecer en dichos sitios, que se ofrecen exclusivamente con carácter informativo y que en ningún caso implican relación alguna entre Daniela Bueno Ventura y las personas o entidades titulares de tales contenidos.
+                La web puede incluir enlaces a sitios web de terceros. La clínica no se responsabiliza de los contenidos de dichos sitios externos ni de sus políticas de privacidad.
               </p>
-            </section>
-
-            <section className="space-y-4">
-              <h2 className="text-xl font-semibold text-foreground">7. Modificaciones</h2>
-              <p>
-                Daniela Bueno Ventura se reserva el derecho de efectuar sin previo aviso las modificaciones que considere oportunas en el Sitio Web, pudiendo cambiar, suprimir o añadir tanto los contenidos y servicios que se prestan a través de la misma como la forma en la que éstos aparezcan presentados o localizados.
-              </p>
-            </section>
-
-            <section className="space-y-4">
-              <h2 className="text-xl font-semibold text-foreground">8. Legislación aplicable y jurisdicción</h2>
-              <p>
-                La relación entre Daniela Bueno Ventura y el usuario se regirá por la normativa española vigente. Para la resolución de cualquier controversia que pudiera surgir, las partes se someten a los Juzgados y Tribunales de Las Palmas de Gran Canaria, salvo que la ley disponga otra cosa.
-              </p>
-            </section>
-
-            <section className="space-y-4">
-              <h2 className="text-xl font-semibold text-foreground">9. Contacto</h2>
-              <p>
-                Para cualquier consulta relacionada con este Aviso Legal, puede contactar con nosotros a través de:
-              </p>
-              <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Email:</strong> [EMAIL OFICIAL]</li>
-                <li><strong>Teléfono:</strong> 928 471 488</li>
-                <li><strong>Dirección:</strong> Calle Perdomo nº8 Local 9, 35002 Las Palmas de Gran Canaria</li>
-              </ul>
             </section>
           </div>
         </div>

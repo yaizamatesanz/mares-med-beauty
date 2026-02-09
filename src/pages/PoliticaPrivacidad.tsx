@@ -17,124 +17,88 @@ const PoliticaPrivacidad = () => {
           </h1>
           
           <div className="prose prose-lg max-w-none text-muted-foreground space-y-8">
-            <p className="text-sm text-muted-foreground/70">
-              Última actualización: Febrero 2026
-            </p>
-
             <section className="space-y-4">
               <h2 className="text-xl font-semibold text-foreground">1. Responsable del tratamiento</h2>
-              <p>
-                En cumplimiento del Reglamento (UE) 2016/679 General de Protección de Datos (RGPD) y la Ley Orgánica 3/2018 de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD), le informamos que los datos personales que nos facilite serán tratados por:
-              </p>
               <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Responsable:</strong> Daniela Bueno Ventura</li>
-                <li><strong>NIF:</strong> [DNI DE DANIELA]</li>
-                <li><strong>Domicilio:</strong> Calle Perdomo nº8 Local 9, 35002 Las Palmas de Gran Canaria</li>
-                <li><strong>Email:</strong> [EMAIL OFICIAL]</li>
-                <li><strong>Teléfono:</strong> 928 471 488</li>
+                <li><strong>Nombre:</strong> Clínica Marès</li>
+                <li><strong>NIF/CIF:</strong> 78512273W</li>
+                <li><strong>Dirección:</strong> Calle Perdomo número 8 local 9, CP 35002, Las Palmas de Gran Canaria</li>
+                <li><strong>Correo de contacto:</strong> doctorabueno@clinicamares.com</li>
               </ul>
             </section>
 
             <section className="space-y-4">
-              <h2 className="text-xl font-semibold text-foreground">2. Finalidad del tratamiento</h2>
-              <p>
-                Sus datos personales serán tratados con las siguientes finalidades:
-              </p>
+              <h2 className="text-xl font-semibold text-foreground">2. Finalidades del tratamiento de datos</h2>
+              <p>Recabamos datos personales para:</p>
               <ul className="list-disc pl-6 space-y-2">
-                <li>Gestionar las solicitudes de cita y consultas realizadas a través del formulario de contacto.</li>
-                <li>Prestar los servicios médico-estéticos contratados.</li>
-                <li>Mantener la relación comercial y asistencial con nuestros pacientes.</li>
-                <li>Enviar comunicaciones comerciales sobre nuestros servicios, siempre que haya dado su consentimiento expreso.</li>
-                <li>Cumplir con las obligaciones legales aplicables.</li>
+                <li>Gestionar citas, consultas y servicios médicos o estéticos</li>
+                <li>Atender solicitudes de información o contacto</li>
+                <li>Gestionar historiales clínicos internos, en caso de prestación de servicios sanitarios</li>
+                <li>Enviar comunicaciones informativas o promociones si el usuario ha dado su consentimiento explícito</li>
               </ul>
             </section>
 
             <section className="space-y-4">
-              <h2 className="text-xl font-semibold text-foreground">3. Base legal del tratamiento</h2>
-              <p>
-                La base legal para el tratamiento de sus datos es:
-              </p>
+              <h2 className="text-xl font-semibold text-foreground">3. Tipos de datos tratados</h2>
+              <p>Se podrán tratar los siguientes datos:</p>
               <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Ejecución de un contrato:</strong> Para la prestación de los servicios médico-estéticos solicitados.</li>
-                <li><strong>Consentimiento del interesado:</strong> Para el envío de comunicaciones comerciales.</li>
-                <li><strong>Cumplimiento de obligaciones legales:</strong> Para la conservación de historiales clínicos según la normativa sanitaria.</li>
-                <li><strong>Interés legítimo:</strong> Para la gestión administrativa y contable de la actividad.</li>
+                <li>Datos de identificación personal (nombre, apellidos, DNI/NIE, fecha de nacimiento)</li>
+                <li>Datos de contacto (correo electrónico, teléfono, dirección)</li>
+                <li>Información de salud relevante para la prestación de servicios</li>
+                <li>Datos económicos en caso de contratación de tratamientos o servicios</li>
               </ul>
             </section>
 
             <section className="space-y-4">
-              <h2 className="text-xl font-semibold text-foreground">4. Categorías de datos tratados</h2>
-              <p>
-                Las categorías de datos que tratamos incluyen:
-              </p>
+              <h2 className="text-xl font-semibold text-foreground">4. Base legal</h2>
+              <p>El tratamiento se basa en:</p>
               <ul className="list-disc pl-6 space-y-2">
-                <li>Datos identificativos: nombre, apellidos, DNI/NIE, dirección, teléfono, email.</li>
-                <li>Datos de salud: historial médico-estético, tratamientos realizados, fotografías clínicas.</li>
-                <li>Datos económicos: datos de facturación y pago.</li>
+                <li>El consentimiento explícito del paciente, especialmente en relación con los datos de salud</li>
+                <li>La ejecución de un contrato o la prestación de servicios sanitarios</li>
+                <li>El cumplimiento de obligaciones legales aplicables al centro sanitario</li>
               </ul>
             </section>
 
             <section className="space-y-4">
-              <h2 className="text-xl font-semibold text-foreground">5. Destinatarios de los datos</h2>
+              <h2 className="text-xl font-semibold text-foreground">5. Conservación de datos</h2>
               <p>
-                Sus datos personales no serán cedidos a terceros, salvo:
+                Los datos se conservarán mientras exista relación asistencial o durante los plazos legales establecidos. Posteriormente, se eliminarán de forma segura o se mantendrán bloqueados cuando sea necesario para el cumplimiento de obligaciones legales.
               </p>
+            </section>
+
+            <section className="space-y-4">
+              <h2 className="text-xl font-semibold text-foreground">6. Destinatarios</h2>
               <ul className="list-disc pl-6 space-y-2">
-                <li>Obligación legal (Administración Tributaria, Juzgados y Tribunales, etc.).</li>
-                <li>Encargados de tratamiento que presten servicios necesarios para nuestra actividad (hosting, gestión contable, etc.), con los que se han firmado los correspondientes contratos de encargo de tratamiento.</li>
+                <li>Los datos no se cederán a terceros salvo obligación legal</li>
+                <li>Podrán tener acceso a los datos proveedores que prestan servicios a la clínica (software de gestión clínica, plataformas de cita online o servicios de correo electrónico), actuando como encargados de tratamiento bajo contratos que garantizan la confidencialidad y seguridad de la información</li>
               </ul>
             </section>
 
             <section className="space-y-4">
-              <h2 className="text-xl font-semibold text-foreground">6. Conservación de los datos</h2>
+              <h2 className="text-xl font-semibold text-foreground">7. Derechos del usuario</h2>
               <p>
-                Los datos personales serán conservados durante:
-              </p>
-              <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Datos de pacientes:</strong> El tiempo legalmente establecido para la conservación de historiales clínicos (mínimo 5 años desde el alta del último proceso asistencial, según la Ley 41/2002).</li>
-                <li><strong>Datos de contacto:</strong> Mientras exista interés mutuo en mantener la relación comercial.</li>
-                <li><strong>Datos de facturación:</strong> 6 años conforme a la normativa mercantil y fiscal.</li>
-              </ul>
-            </section>
-
-            <section className="space-y-4">
-              <h2 className="text-xl font-semibold text-foreground">7. Derechos del interesado</h2>
-              <p>
-                Puede ejercer sus derechos de acceso, rectificación, supresión, limitación, portabilidad y oposición enviando una solicitud a [EMAIL OFICIAL] o por correo postal a nuestra dirección, adjuntando copia de su DNI.
+                Los usuarios pueden ejercer sus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad enviando una solicitud junto con copia de documento identificativo a: <a href="mailto:contacto@clinicamares.com" className="text-primary hover:underline">contacto@clinicamares.com</a>
               </p>
               <p>
-                Asimismo, tiene derecho a:
+                Asimismo, tienen derecho a presentar una reclamación ante la Agencia Española de Protección de Datos si consideran que el tratamiento de sus datos no se ajusta a la normativa vigente.
               </p>
-              <ul className="list-disc pl-6 space-y-2">
-                <li>Retirar el consentimiento otorgado en cualquier momento.</li>
-                <li>Presentar una reclamación ante la Agencia Española de Protección de Datos (www.aepd.es) si considera que sus derechos no han sido atendidos correctamente.</li>
-              </ul>
             </section>
 
             <section className="space-y-4">
               <h2 className="text-xl font-semibold text-foreground">8. Medidas de seguridad</h2>
               <p>
-                Daniela Bueno Ventura ha adoptado las medidas técnicas y organizativas necesarias para garantizar la seguridad de los datos personales y evitar su alteración, pérdida, tratamiento o acceso no autorizado, teniendo en cuenta el estado de la tecnología, la naturaleza de los datos y los riesgos a los que están expuestos.
+                Se aplican medidas técnicas y organizativas apropiadas para proteger los datos personales, especialmente los relativos a la salud, contra accesos no autorizados, pérdida, alteración o divulgación indebida.
               </p>
             </section>
 
             <section className="space-y-4">
-              <h2 className="text-xl font-semibold text-foreground">9. Modificaciones de la política de privacidad</h2>
+              <h2 className="text-xl font-semibold text-foreground">9. Uso de imágenes y testimonios</h2>
               <p>
-                Daniela Bueno Ventura se reserva el derecho a modificar la presente Política de Privacidad para adaptarla a novedades legislativas o jurisprudenciales. En dichos supuestos, se anunciará en esta página los cambios introducidos con razonable antelación a su puesta en práctica.
+                Todas las imágenes de pacientes y testimonios publicados se realizan únicamente con el consentimiento explícito y por escrito de los interesados.
               </p>
-            </section>
-
-            <section className="space-y-4">
-              <h2 className="text-xl font-semibold text-foreground">10. Contacto</h2>
               <p>
-                Para cualquier consulta relacionada con el tratamiento de sus datos personales, puede contactar con nosotros a través de:
+                Se respeta la privacidad, confidencialidad e integridad del paciente. Las imágenes tienen fines informativos y promocionales y no garantizan resultados concretos. Los testimonios reflejan experiencias individuales y no constituyen una garantía de resultados clínicos.
               </p>
-              <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Email:</strong> [EMAIL OFICIAL]</li>
-                <li><strong>Teléfono:</strong> 928 471 488</li>
-                <li><strong>Dirección:</strong> Calle Perdomo nº8 Local 9, 35002 Las Palmas de Gran Canaria</li>
-              </ul>
             </section>
           </div>
         </div>
