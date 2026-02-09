@@ -211,10 +211,20 @@ const AppointmentForm = () => {
         )}
       </Button>
 
-      <p className="text-xs text-muted-foreground text-center">
-        Al enviar este formulario aceptas nuestra política de privacidad. 
-        Tus datos están protegidos y no serán compartidos con terceros.
-      </p>
+      <label className="flex items-start gap-2 text-xs text-muted-foreground cursor-pointer">
+        <input
+          type="checkbox"
+          required
+          className="mt-0.5 accent-primary"
+        />
+        <span>
+          He leído la{" "}
+          <a href="/politica-privacidad" target="_blank" className="text-primary hover:underline">
+            Política de Privacidad
+          </a>{" "}
+          y consiento expresamente el tratamiento de mis datos, incluidos los datos relativos a la salud, para gestionar mi solicitud y recibir información de la clínica.
+        </span>
+      </label>
     </form>
   );
 };
